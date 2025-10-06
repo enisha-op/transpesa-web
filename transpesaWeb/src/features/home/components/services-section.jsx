@@ -27,23 +27,46 @@ export default function TiposCargaSection() {
       title: "Aduanas",
       description:
         "Gestión aduanera ágil y confiable para tus operaciones de importación y exportación.",
-      link: "#",
+      link: "https://amt.pe/", // <-- URL actualizada
+      external: true,           // <-- Propiedad para identificar enlace externo
       imageUrl: "/almacenajeHero.jpg",
     },
   ]
   
   const [activeBg, setActiveBg] = useState(services[0].imageUrl)
 
+  // Componente reutilizable para el botón
+  const ServiceButton = ({ service }) => {
+    const commonClasses = "inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg text-base font-semibold transition-colors";
+    const content = (
+      <>
+        Ver más
+        <ArrowRight className="w-5 h-5" />
+      </>
+    );
+
+    if (service.external) {
+      return (
+        <a href={service.link} target="_blank" rel="noopener noreferrer" className={commonClasses}>
+          {content}
+        </a>
+      );
+    }
+
+    return (
+      <Link to={service.link} className={commonClasses}>
+        {content}
+      </Link>
+    );
+  };
+
   return (
     <section className="relative min-h-screen lg:h-screen w-full overflow-hidden">
       
-      {/* --- VERSIÓN MÓVIL (Secciones a pantalla completa) --- */}
-      {/* 👇 CAMBIO: Contenedor móvil ahora sin padding para un look 'full-bleed' */}
+      {/* --- VERSIÓN MÓVIL --- */}
       <div className="lg:hidden">
-        {/* 👇 CAMBIO: Eliminamos el espacio entre tarjetas */}
         <div className="space-y-0">
             {services.map(service => (
-                // 👇 CAMBIO: Cada tarjeta ya no tiene bordes redondeados y es más alta (80% de la altura de la pantalla)
                 <div key={service.id} className="relative w-full h-[80vh] shadow-xl">
                     <img src={service.imageUrl} alt={service.title} className="absolute inset-0 w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
@@ -51,10 +74,8 @@ export default function TiposCargaSection() {
                         <h3 className="text-3xl font-bold">{service.title}</h3>
                         <p className="mt-2 text-base leading-relaxed">{service.description}</p>
                         <div className="mt-6">
-                            <Link to={service.link} className="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg text-base font-semibold transition-colors">
-                                Ver más
-                                <ArrowRight className="w-5 h-5" />
-                            </Link>
+                            {/* --- MODIFICACIÓN 2: Usar el botón condicional --- */}
+                            <ServiceButton service={service} />
                         </div>
                     </div>
                 </div>
@@ -62,8 +83,7 @@ export default function TiposCargaSection() {
         </div>
       </div>
 
-      {/* --- VERSIÓN ESCRITORIO (Interactiva y Horizontal) --- */}
-      {/* Esta parte no ha cambiado */}
+      {/* --- VERSIÓN ESCRITORIO --- */}
       <div className="hidden lg:flex relative h-full">
         <AnimatePresence>
           <motion.div
@@ -102,13 +122,26 @@ export default function TiposCargaSection() {
                 <div className="opacity-0 max-w-md transform translate-y-8 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                   <p className="text-lg leading-relaxed mb-6">{service.description}</p>
                   <div className="flex items-center">
-                    <Link
-                      to={service.link}
-                      className="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg flex items-center gap-2 transition-colors"
-                    >
-                      <span className="font-medium">Ver más</span>
-                      <ArrowRight className="w-5 h-5" />
-                    </Link>
+                    {/* --- MODIFICACIÓN 3: Usar el botón condicional --- */}
+                    {service.external ? (
+                      <a 
+                        href={service.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg flex items-center gap-2 transition-colors"
+                      >
+                        <span className="font-medium">Ver más</span>
+                        <ArrowRight className="w-5 h-5" />
+                      </a>
+                    ) : (
+                      <Link
+                        to={service.link}
+                        className="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg flex items-center gap-2 transition-colors"
+                      >
+                        <span className="font-medium">Ver más</span>
+                        <ArrowRight className="w-5 h-5" />
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>

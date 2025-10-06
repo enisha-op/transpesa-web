@@ -27,7 +27,11 @@ export default function Navigation() {
   const serviceLinks = [
     { href: "/transporte", key: "navServiceTransport" },
     { href: "/almacenaje", key: "navServiceStorage" },
-    { href: "/#", key: "navServiceCustoms" },
+    { 
+      href: "https://amt.pe/", 
+      key: "navServiceCustoms", 
+      external: true 
+    },
   ]
 
   return (
@@ -75,6 +79,8 @@ export default function Navigation() {
                         <a
                           key={link.key}
                           href={link.href}
+                          target={link.external ? "_blank" : undefined}
+                          rel={link.external ? "noopener noreferrer" : undefined}
                           className="block px-3 py-2 text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-md whitespace-nowrap"
                         >
                           {t(link.key)}

@@ -6,7 +6,12 @@ export default function Footer() {
   const services = [
     { name: "Almacenaje", icon: Warehouse, href: "/almacenaje" },
     { name: "Transporte", icon: Truck, href: "/transporte" },
-    { name: "Aduanas", icon: Globe, href: "/#" },
+    { 
+      name: "Aduanas", 
+      icon: Globe, 
+      href: "https://amt.pe/", 
+      external: true 
+    },
   ]
 
   const currentYear = new Date().getFullYear()
@@ -98,7 +103,9 @@ export default function Footer() {
             <div className="flex items-center w-full max-w-md">
               {services.map((service, index) => (
                 <React.Fragment key={service.name}>
-                  <a href={service.href} className="flex flex-col items-center text-center group px-2">
+                  <a href={service.href} className="flex flex-col items-center text-center group px-2"
+                    target={service.external ? "_blank" : undefined}
+                    rel={service.external ? "noopener noreferrer" : undefined}>
                     <div className="w-16 h-16 sm:w-18 sm:h-18 rounded-full border-2 border-white xl:border-gray-300 flex items-center justify-center text-white xl:text-gray-600 group-hover:bg-red-600 group-hover:text-white group-hover:border-red-600 group-hover:shadow-lg group-hover:scale-105 transition-all duration-300">
                       <service.icon className="w-7 h-7 sm:w-8 sm:h-8" strokeWidth={2} />
                     </div>
