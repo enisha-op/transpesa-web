@@ -1,0 +1,219 @@
+{
+  "_comentario": "TRADUCCIONES AL INGLÉS DEL NAVBAR",
+
+  "navHome": "HOME",
+  "navAbout": "ABOUT US",
+  "navServices": "SERVICES",
+  "navContact": "CONTACT US",
+  "navServiceTransport": "Transport",
+  "navServiceStorage" : "Storage",
+  "navServiceCustoms": "Customs",
+  "navBlog": "BLOG",
+  
+
+
+
+  "_comentario2": "TRADUCCIONES AL INGLÉS DE LOS HERO",
+
+  "heroAboutUs": "About Us",
+  "heroServices": "Services",
+  "heroContact": "Contact",
+  "heroWorkWithUs": "Work With Us",
+  "heroStorage": "Storage",
+  "heroTransport": "Transport",
+  "heroLibroReclamaciones": "Complaints Book",
+  "heroBlog": "Blog",
+
+
+  "_comentario3": "TRADUCCIONES AL INGLÉS DEL HOME HERO",
+
+  "homeHeroAltText": "Transpesa truck on the road",
+  "homeHeroSubheading": "Leaders in logistics",
+  "homeHeroTitle": "OVER 50 YEARS LEADING LOGISTICS IN PERU",
+  "homeHeroDescription": "We provide safe and reliable transportation solutions throughout Peru with the highest quality of service.",
+  "homeHeroButtonKnowMore": "Learn more",
+  "homeHeroButtonContactUs": "Contact Us",
+  "homeHeroStatExperience": "Years of experience",
+  "homeHeroStatClients": "Satisfied clients",
+  "homeHeroStatService": "Service available",
+
+
+
+  "_comentario4": "TRADUCCIONES AL INGLES DEL CONTENTSECTION DEL HOME",
+
+  "homeContentTitle": "<0>Experts</0> in the safe transport <1/> of <2>industrial loads</2>",
+  "homeContentSubtitle": "50 years is not just experience, it is proof <1/> that Transpesa is synonymous with trust, <2/> security and strength in motion",
+  "homeContentImageAlt": "Transpesa industrial truck",
+
+
+  "_comentario5": "STATSFOOTER TRANSLATIONS",
+  
+  "statsFooterExperience": "years of\nexperience",
+  "statsFooterCollaborators": "committed\ncollaborators",
+  "statsFooterHeadquarters": "strategically\nlocated\nheadquarters",
+  "statsFooterClients": "satisfied\nclients",
+  "statsFooterTrips": "trips completed\nper year",
+
+
+
+
+  "_comentario6": "PILLARS SECTION TRANSLATIONS",
+
+  "pillarsMainTitle": "Our Pillars",
+  "pillarsMainSubtitle": "The values that guide every decision and action at Transpesa, reflecting our commitment to excellence, innovation, and responsibility toward our clients, employees, and society.",
+  "pillarsLogisticsTitle": "Logistics Excellence",
+  "pillarsLogisticsDesc": "We differentiate ourselves by optimizing each stage of the transport and storage chain, ensuring punctuality, quality, and trust in every delivery.",
+  "pillarsSafetyTitle": "Safety and Well-being",
+  "pillarsSafetyDesc": "We prioritize the protection of our employees, clients, and community, fostering a culture of prevention and responsibility in all our operations.",
+  "pillarsTechTitle": "Technological Innovation",
+  "pillarsTechDesc": "We drive digital transformation through technological solutions that improve efficiency and customer experience.",
+  "pillarsIntegrityTitle": "Corporate Integrity",
+  "pillarsIntegrityDesc": "We act with transparency and ethics, applying clear policies and fair processes that strengthen the trust of our partners and clients.",
+  "pillarsSustainableTitle": "Sustainable Commitment",
+  "pillarsSustainableDesc": "We work to minimize our environmental impact, promoting responsible practices and generating shared value in society.",
+
+
+
+
+  "_comentario7": "QUALITY SECTION TRANSLATIONS",
+
+  "qualityTitle": "Certified <0>Quality</0>",
+  "qualitySubtitle": "Compliance and continuous improvement in each of our processes.",
+  "qualityAltSGS1": "SGS Certification 1",
+  "qualityAltSGS2": "SGS Certification 2",
+  "qualityAltSGS3": "SGS Certification 3",
+  "qualityAltSGS4": "SGS Certification 4",
+
+
+
+  "_comentario8": "VISION SECTION TRANSLATIONS",
+
+  "visionQuote": "Great dreams are built step by step, with decisions that forge paths.",
+  "visionCite": "(Enrique Pesantes Cueva)",
+  "visionAltTruck": "White Transpesa truck",
+  "visionAltWorker": "Port worker",
+  "visionAltAirplane": "Airplane with shipping containers",
+
+
+
+
+  "_comentario9": "TEAM SECTION TRANSLATIONS",
+
+  "teamMainTitle": "Our <0>Team</0>",
+  "teamMainSubtitle": "Committed people who drive every operation and result.",
+  "teamMember1Name": "Juan Pérez",
+  "teamMember1Position": "Operations Manager",
+  "teamMember2Name": "María García",
+  "teamMember2Position": "Logistics Director",
+  "teamMember3Name": "Carlos Sánchez",
+  "teamMember3Position": "Fleet Manager",
+  "teamImageAlt": "Photo of {{name}}",
+  "teamButtonLinkedIn": "LINKEDIN",
+
+
+
+  "_comentario10": "LOCATIONS SECTION TRANSLATIONS",
+
+  "locationsMainTitle": "Find Us",
+  "locationsMainSubtitle": "A strategic presence to be closer to you.",
+  "locationsAddressTrujillo": "Parcela Rustica 4808 Urb. Ex Fundo La Rea TRUJILLO - LA LIBERTAD",
+  "locationsAddressLima": "Street 2 Corner Elmer Faucett Ave., Urb. Fundo Bocanegra Alto- Callao",
+
+
+
+  "_comentario11": "STRATEGIC PARTNERS SECTION TRANSLATIONS",
+  
+  "partnersMainTitle": "<0>Strategic</0> <1>Partners</1>",
+  "partnersAltVolcan": "Vulcan Mining Company S.A.A.",
+  "partnersAltLimagas": "Limagas",
+  "partnersAltArcacon": "Arcacon Real Estate",
+  "partnersAltSolgas": "Solgas",
+
+
+
+
+  "_comentario12": "BRANCHES SECTION TRANSLATIONS ------- CONTACT US PAGE",
+
+  "branchesMainTitle": "Our <0>Branches</0>",
+  "branchAddress1": "Street 2 Corner Elmer Faucett Ave., Urb. Fundo Bocanegra Alto- Callao",
+
+
+
+  "_comentario13": "CONTACT SECTION TRANSLATIONS -------- CONTACT US PAGE FORM",
+
+  "contactMainTitle": "Contact Us",
+  "contactMainSubtitle": "Fill in your details and query.",
+  "contactFieldName": "Full Name",
+  "contactFieldEmail": "Email Address",
+  "contactFieldPhone": "Phone Number",
+  "contactFieldCompany": "Company Name",
+  "contactFieldQuery": "Your Query",
+  "contactCheckboxTerms": "I have read and accept the <0>Terms and Conditions</0> and the <1>Privacy Policy</1>",
+  "contactCheckboxMarketing": "I authorize the processing of my data for the purposes described in the privacy policy.",
+  "contactButtonSubmit": "Send",
+  "contactImageAlt": "Transportation and logistics",
+
+
+
+  "_comentario14": "BUSINESS LINES SECTION TRANSLATIONS ------ Pagina de Servicios",
+
+  "businessLinesCategory": "Business Lines",
+  "businessLinesTitle": "Services designed to connect and optimize",
+  "businessLinesImageAlt": "Transpesa truck fleet in operation",
+  "blTransportTitle": "Transportation",
+  "blTransportDesc": "We move your cargo with punctuality, security, and technology in every delivery.",
+  "blStorageTitle": "Warehousing",
+  "blStorageDesc": "Secure and efficient spaces for the management and control of your goods.",
+  "blCustomsTitle": "Customs",
+  "blCustomsDesc": "Agile and reliable customs management for your import and export operations.",
+
+
+
+
+  "_comentario15": "APPLICATION SECTION TRANSLATIONS",
+
+  "applicationMainTitle": "Contact an expert",
+  "applicationMainSubtitle": "Fill in your details and we will get in touch with you.",
+  "applicationFieldFirstName": "First Name",
+  "applicationFieldLastName": "Last Name",
+  "applicationFieldEmail": "Email Address",
+  "applicationFieldPhone": "Phone Number",
+  "applicationFieldPosition": "Position to apply for",
+  "applicationLabelCV": "Attach your CV",
+  "applicationButtonSelectFile": "Select a file",
+  "applicationLabelNoFile": "No file selected",
+  "applicationButtonSubmit": "Send",
+  "applicationBrandTitle": "Be part of the change!",
+  "applicationBrandSubtitle": "We take logistics to another level with innovation and passion.",
+  "applicationBrandLogoAlt": "Grupo Transpesa Logo in white",
+
+
+
+  "_comentario16": "JOB OPENINGS SECTION TRANSLATIONS",
+
+  "jobsMainTitle": "Join <0>Our Team</0>",
+  "jobsCardDateLabel": "Deadline",
+  "jobsCardApplyButton": "APPLY HERE",
+
+  "job1Title": "ADMINISTRATIVE ASSISTANT",
+  "job1Req1": "Minimum 2 years of experience.",
+  "job1Req2": "Basic knowledge of Excel and Office tools.",
+  "job1Req3": "Organization and attention to detail.",
+  "job1Req4": "Ability to work in a team and under pressure.",
+  "job1Req5": "Immediate availability.",
+
+  "job2Title": "LOGISTICS ANALYST",
+  "job2Req1": "Experience in inventory management.",
+  "job2Req2": "Knowledge of logistics software.",
+  "job2Req3": "Negotiation skills with suppliers.",
+  "job2Req4": "Analytical and problem-solving skills.",
+
+  "job3Title": "OPERATIONS COORDINATOR",
+  "job3Req1": "Minimum 3 years of experience in similar positions.",
+  "job3Req2": "Leadership and team management.",
+  "job3Req3": "Route planning and optimization.",
+  "job3Req4": "Knowledge of transport regulations."
+
+
+
+}

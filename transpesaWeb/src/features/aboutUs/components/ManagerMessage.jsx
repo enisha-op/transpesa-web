@@ -1,0 +1,48 @@
+export default function ManagerMessage() {
+  return (
+    <section className="bg-white py-16 lg:py-24">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          
+          {/* --- COLUMNA IZQUIERDA (IMAGEN) --- */}
+          {/* 👇 NUEVO DISEÑO DE ESTILO "ARCO" */}
+          <div className="relative w-full max-w-md mx-auto aspect-square flex justify-center items-center">
+            
+            {/* 1. El Arco decorativo */}
+            <div className="absolute w-full h-full rounded-full border-[20px] sm:border-[24px] border-red-600 transform -rotate-45" />
+            
+            {/* 2. La imagen del gerente */}
+            <img 
+              src="/fotoGerente.jpg"
+              alt="Enrique Pesantes Novoa, Gerente General"
+              className="relative object-cover w-[80%] h-[80%] rounded-full shadow-2xl"
+            />
+
+            {/* 3. El sello de "+40 Años" */}
+            <div className="absolute bottom-0 right-0 h-28 w-28 sm:h-36 sm:w-36 bg-white rounded-full border-[6px] border-red-600 flex flex-col items-center justify-center text-center p-2 shadow-xl">
+              <span className="text-3xl sm:text-4xl font-bold text-red-600">+40</span>
+              <span className="text-xs sm:text-sm font-semibold leading-tight text-gray-800">AÑOS CONSTRUYENDO CONFIANZA</span>
+            </div>
+          </div>
+
+          {/* --- COLUMNA DERECHA (TEXTO) --- */}
+          <div className="row-start-1 lg:row-start-auto">
+            <p className="text-red-600 font-bold uppercase tracking-wider">Liderazgo</p>
+            <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
+              Palabras del Gerente General
+            </h2>
+            <p className="mt-6 text-gray-600 leading-relaxed">
+              Transpesa, con una sólida trayectoria en el sector logístico, se ha convertido en un referente en soluciones integrales de transporte, almacenaje y gestión aduanera. A lo largo de los años, hemos construido relaciones basadas en confianza, seguridad y eficiencia, conectando a nuestros clientes con servicios de alto valor y tecnología de vanguardia.
+              <br/><br/>
+              Nuestro compromiso es seguir creciendo de manera sostenible, impulsando la innovación y el desarrollo de nuestro equipo humano, con el objetivo de trascender fronteras y consolidarnos como una empresa de clase mundial.
+            </p>
+            <div className="mt-8">
+              <p className="text-xl font-bold text-red-600">Enrique Pesantes Novoa</p>
+              <p className="text-gray-500">Gerente General</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

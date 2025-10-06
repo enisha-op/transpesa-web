@@ -1,0 +1,218 @@
+{
+  "_comentario": "TRADUCCIONES AL ESPAÑOL DEL NAVBAR",
+
+  "navHome": "INICIO",
+  "navAbout": "NOSOTROS",
+  "navServices": "SERVICIOS",
+  "navContact": "CONTÁCTANOS",
+  "navServiceTransport": "Transporte",
+  "navServiceStorage" : "Almacenaje",
+  "navServiceCustoms": "Aduanas",
+  "navBlog": "BLOG",  
+
+
+
+  "_comentario2": "TRADUCCIONES AL ESPAÑOL DE LOS HERO",
+
+  "heroAboutUs": "Nosotros",
+  "heroServices": "Servicios",
+  "heroContact": "Contacto",
+  "heroWorkWithUs": "Trabaja Con Nosotros",
+  "heroStorage": "Almacenaje",
+  "heroTransport": "Transporte",
+  "heroLibroReclamaciones": "Libro de Reclamaciones",
+  "heroBlog": "Blog",
+
+
+
+  "_comentario3": "TRADUCCIONES AL ESPAÑOL DEL HOME HERO",
+
+  "homeHeroAltText": "Camión Transpesa en la carretera",
+  "homeHeroSubheading": "Líderes en logística",
+  "homeHeroTitle": "MÁS DE 50 AÑOS LIDERANDO LA LOGÍSTICA EN PERÚ",
+  "homeHeroDescription": "Brindamos soluciones de transporte seguro y confiable en todo el territorio peruano con la más alta calidad de servicio.",
+  "homeHeroButtonKnowMore": "Conoce más",
+  "homeHeroButtonContactUs": "Contáctanos",
+  "homeHeroStatExperience": "Años de experiencia",
+  "homeHeroStatClients": "Clientes satisfechos",
+  "homeHeroStatService": "Servicio disponible",
+
+
+
+  "_comentario4": "TRADUCCIONES AL ESPAÑOL DEL CONTENTSECTION DEL HOME",
+
+  "homeContentTitle": "<0>Expertos</0> en el transporte <1/> seguro de <2>cargas industriales</2>",
+  "homeContentSubtitle": "50 años no son experiencia, son la prueba de <1/> que Transpesa es sinónimo de confianza, <2/> seguridad y fuerza en movimiento",
+  "homeContentImageAlt": "Camión industrial Transpesa",
+
+
+  "_comentario5": "TRADUCCIONES AL ESPAÑOL DEL STATSFOOTER",
+  
+  "statsFooterExperience": "años de\nexperiencia",
+  "statsFooterCollaborators": "colaboradores\ncomprometidos",
+  "statsFooterHeadquarters": "sedes\nestratégicamente\nubicadas",
+  "statsFooterClients": "clientes\nsatisfechos",
+  "statsFooterTrips": "viajes completados\nal año",
+
+
+  "_comentario6": "TRADUCCIONES AL ESPAÑOL DE LA SECCIÓN DE PILARES",
+
+  "pillarsMainTitle": "Nuestros Pilares",
+  "pillarsMainSubtitle": "Los valores que guían cada decisión y acción en Transpesa, reflejando nuestro compromiso con la excelencia operativa, la innovación y la responsabilidad hacia nuestros clientes, colaboradores y la sociedad.",
+  "pillarsLogisticsTitle": "Excelencia Logística",
+  "pillarsLogisticsDesc": "Nos diferenciamos por optimizar cada etapa de la cadena de transporte y almacenamiento, asegurando puntualidad, calidad y confianza en cada entrega.",
+  "pillarsSafetyTitle": "Seguridad y Bienestar",
+  "pillarsSafetyDesc": "Priorizamos la protección de nuestros colaboradores, clientes y comunidad, fomentando una cultura de prevención y responsabilidad en todas nuestras operaciones.",
+  "pillarsTechTitle": "Innovación Tecnológica",
+  "pillarsTechDesc": "Impulsamos la transformación digital mediante soluciones tecnológicas que mejoran la eficiencia y la experiencia de nuestros clientes.",
+  "pillarsIntegrityTitle": "Integridad Corporativa",
+  "pillarsIntegrityDesc": "Actuamos con transparencia y ética, aplicando políticas claras y procesos justos que fortalecen la confianza de nuestros socios y clientes.",
+  "pillarsSustainableTitle": "Compromiso Sostenible",
+  "pillarsSustainableDesc": "Trabajamos para minimizar nuestro impacto ambiental, promoviendo prácticas responsables y generando valor compartido en la sociedad.",
+
+
+
+
+  "_comentario7": "TRADUCCIONES AL ESPAÑOL DE LA SECCIÓN DE CALIDAD",
+
+  "qualityTitle": "Calidad <0>Certificada</0>",
+  "qualitySubtitle": "Cumplimiento y mejora continua en cada uno de nuestros procesos.",
+  "qualityAltSGS1": "Certificación SGS 1",
+  "qualityAltSGS2": "Certificación SGS 2",
+  "qualityAltSGS3": "Certificación SGS 3",
+  "qualityAltSGS4": "Certificación SGS 4",
+
+
+
+
+  "_comentario8": "TRADUCCIONES AL ESPAÑOL DE LA SECCIÓN DE VISIÓN",
+
+  "visionQuote": "Los grandes sueños se construyen paso a paso, con decisiones que marcan caminos.",
+  "visionCite": "(Enrique Pesantes Cueva)",
+  "visionAltTruck": "Camión blanco de Transpesa",
+  "visionAltWorker": "Trabajador portuario",
+  "visionAltAirplane": "Avión con contenedores de carga",
+
+
+
+
+  "_comentario9": "TRADUCCIONES AL ESPAÑOL DE LA SECCIÓN DE EQUIPO",
+
+  "teamMainTitle": "Nuestro <0>Equipo</0>",
+  "teamMainSubtitle": "Personas comprometidas que impulsan cada operación y resultado.",
+  "teamMember1Name": "Juan Pérez",
+  "teamMember1Position": "Gerente de Operaciones",
+  "teamMember2Name": "María García",
+  "teamMember2Position": "Directora de Logística",
+  "teamMember3Name": "Carlos Sánchez",
+  "teamMember3Position": "Jefe de Flota",
+  "teamImageAlt": "Foto de {{name}}",
+  "teamButtonLinkedIn": "LINKEDIN",
+
+
+
+  "_comentario10": "TRADUCCIONES AL ESPAÑOL DE LA SECCIÓN DE UBICACIONES",
+
+  "locationsMainTitle": "Ubícanos",
+  "locationsMainSubtitle": "Presencia estratégica para estar más cerca de ti.",
+  "locationsAddressTrujillo": "Parcela Rustica 4808 Urb. Ex Fundo La Rea TRUJILLO - LA LIBERTAD",
+  "locationsAddressLima": "Calle 2 Esquina Av. Elmer Faucett, Urb. Fundo Bocanegra Alto- Callao",
+
+
+
+  "_comentario11": "TRADUCCIONES AL ESPAÑOL DE LA SECCIÓN DE ALIADOS",
+  
+  "partnersMainTitle": "<0>Aliados</0> <1>Estratégicos</1>",
+  "partnersAltVolcan": "Vulcan Compañía Minera S.A.A.",
+  "partnersAltLimagas": "Limagas",
+  "partnersAltArcacon": "Arcacon Inmobiliaria",
+  "partnersAltSolgas": "Solgas",
+
+
+
+  "_comentario12": "TRADUCCIONES AL ESPAÑOL DE LA SECCIÓN DE SUCURSALES ------- PÁGINA CONTÁCTANOS",
+
+  "branchesMainTitle": "Nuestras <0>Sucursales</0>",
+  "branchAddress1": "Calle 2 Esquina Av. Elmer Faucett, Urb. Fundo Bocanegra Alto- Callao",
+
+
+
+  "_comentario13": "TRADUCCIONES AL ESPAÑOL DE LA SECCIÓN DE CONTACTO ------- FORMULARIO PÁGINA CONTÁCTANOS",
+
+  "contactMainTitle": "Contacta con nosotros",
+  "contactMainSubtitle": "Complete sus datos y consulta.",
+  "contactFieldName": "Nombres y Apellidos",
+  "contactFieldEmail": "Correo electrónico",
+  "contactFieldPhone": "Celular",
+  "contactFieldCompany": "Nombre de Empresa",
+  "contactFieldQuery": "Consulta",
+  "contactCheckboxTerms": "He leído y acepto los <0>Términos y Condiciones</0> y la <1>Política de Privacidad</1>",
+  "contactCheckboxMarketing": "Autorizo los fines de tratamiento de mis datos descritos en la política de privacidad.",
+  "contactButtonSubmit": "Enviar",
+  "contactImageAlt": "Transporte y logística",
+
+
+
+  "_comentario14": "TRADUCCIONES AL ESPAÑOL DE LA SECCIÓN DE LÍNEAS DE NEGOCIO ---- PÁGINA SERVICIOS",
+
+  "businessLinesCategory": "Líneas de Negocio",
+  "businessLinesTitle": "Servicios diseñados para conectar y optimizar",
+  "businessLinesImageAlt": "Flota de camiones Transpesa en operación",
+  "blTransportTitle": "Transporte",
+  "blTransportDesc": "Movemos tu carga con puntualidad, seguridad y tecnología en cada entrega.",
+  "blStorageTitle": "Almacenaje",
+  "blStorageDesc": "Espacios seguros y eficientes para la gestión y control de tus mercancías.",
+  "blCustomsTitle": "Aduanas",
+  "blCustomsDesc": "Gestión aduanera ágil y confiable para tus operaciones de importación y exportación.",
+
+
+
+  "_comentario15": "TRADUCCIONES AL ESPAÑOL DE LA SECCIÓN DE POSTULACIÓN",
+
+  "applicationMainTitle": "Contacta con un experto",
+  "applicationMainSubtitle": "Llena tus datos y nos comunicaremos contigo.",
+  "applicationFieldFirstName": "Nombres",
+  "applicationFieldLastName": "Apellidos",
+  "applicationFieldEmail": "Correo electrónico",
+  "applicationFieldPhone": "Celular",
+  "applicationFieldPosition": "Puesto a postular",
+  "applicationLabelCV": "Adjunta tu CV",
+  "applicationButtonSelectFile": "Selecciona un archivo",
+  "applicationLabelNoFile": "Ningún archivo seleccionado",
+  "applicationButtonSubmit": "Enviar",
+  "applicationBrandTitle": "¡Sé parte del cambio!",
+  "applicationBrandSubtitle": "Llevamos la logística a otro nivel con innovación y pasión.",
+  "applicationBrandLogoAlt": "Logo de Grupo Transpesa en blanco",
+
+
+
+  "_comentario16": "TRADUCCIONES AL ESPAÑOL DE LA SECCIÓN DE OFERTAS DE TRABAJO",
+
+  "jobsMainTitle": "Únete a <0>Nuestro Equipo</0>",
+  "jobsCardDateLabel": "Fecha Límite",
+  "jobsCardApplyButton": "POSTULA AQUÍ",
+  
+  "job1Title": "ASISTENTE DE ADMINISTRACIÓN",
+  "job1Req1": "Experiencia mínima 2 años.",
+  "job1Req2": "Conocimiento básico de excel y herramientas de office.",
+  "job1Req3": "Organización y atención al detalle.",
+  "job1Req4": "Capacidad para trabajar en equipo y bajo presión.",
+  "job1Req5": "Disponibilidad inmediata.",
+
+  "job2Title": "ANALISTA DE LOGÍSTICA",
+  "job2Req1": "Experiencia en gestión de inventarios.",
+  "job2Req2": "Conocimiento de software de logística.",
+  "job2Req3": "Habilidades de negociación con proveedores.",
+  "job2Req4": "Capacidad analítica y resolución de problemas.",
+
+  "job3Title": "COORDINADOR DE OPERACIONES",
+  "job3Req1": "Experiencia mínima 3 años en puestos similares.",
+  "job3Req2": "Liderazgo y gestión de equipos.",
+  "job3Req3": "Planificación y optimización de rutas.",
+  "job3Req4": "Conocimiento en normativas de transporte."
+
+
+
+
+
+}
