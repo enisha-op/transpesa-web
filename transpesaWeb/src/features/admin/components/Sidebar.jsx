@@ -1,20 +1,22 @@
 import { NavLink, useNavigate } from "react-router-dom";
-// 1. IMPORTA EL NUEVO ÍCONO
-import { LayoutDashboard, FileText, Briefcase, Megaphone, LogOut, X, ChevronRight } from "lucide-react";
+// 1. IMPORTA EL NUEVO ÍCONO (Inbox)
+import { LayoutDashboard, FileText, Briefcase, Megaphone, Newspaper, LogOut, X, ChevronRight, Inbox } from "lucide-react";
 
 // 2. AÑADE EL NUEVO OBJETO AL ARRAY
 const navItems = [
   { to: "/admin", label: "Dashboard", icon: LayoutDashboard },
   { to: "/admin/applications", label: "Formularios", icon: FileText },
+  { to: "/admin/contacts", label: "Contacto", icon: Inbox }, // <-- ENLACE AÑADIDO
   { to: "/admin/trabajos", label: "Puestos de Trabajo", icon: Briefcase },
-  { to: "/admin/anuncios", label: "Anuncios", icon: Megaphone }, // <-- ENLACE AÑADIDO
+  { to: "/admin/anuncios", label: "Anuncios", icon: Megaphone },
+  { to: "/admin/blog", label: "Blog", icon: Newspaper },
 ];
 
 export default function Sidebar({ isOpen, setIsOpen }) {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    localStorage.removeItem("accessToken");
+    localStorage.removeItem("accessToken"); // O el nombre de tu token
     navigate("/login");
   };
 

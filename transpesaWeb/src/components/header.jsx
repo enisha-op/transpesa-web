@@ -200,6 +200,13 @@ export default function Navigation() {
                     )}
                   </AnimatePresence>
                 </div>
+                <a
+                  href="/blog"
+                  onClick={() => setIsOpen(false)}
+                  className="text-2xl text-gray-800 hover:text-red-600 font-medium"
+                >
+                  {t("navBlog")}
+                </a>
 
                 <a
                   href="/contacto"

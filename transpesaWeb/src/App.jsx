@@ -32,6 +32,8 @@ import DashboardPage from "../src/features/admin/pages/DashboardPage"
 import JobsPage from "@/features/admin/pages/JobsPage"
 import ApplicationsPage from "@/features/admin/pages/ApplicationsPage"
 import AnunciosPage from "./features/admin/pages/AnunciosPage"
+import BlogPageAdmin from "./features/admin/pages/BlogPageAdmin"
+import ContactoFormPage from "./features/admin/pages/ContactoFormPage"
 
 // Para el mapa de Leaflet
 import "leaflet/dist/leaflet.css"
@@ -79,6 +81,9 @@ function App() {
           {/* <Route path="formularios" element={<FormsPage />} /> */}
           <Route path="trabajos" element={<JobsPage />} />
           <Route path="anuncios" element={<AnunciosPage />} />
+          <Route path="blog" element={<BlogPageAdmin />} />
+          <Route path="contacts" element={<ContactoFormPage />} />
+
         </Route>
 
         {/* --- RUTA PARA PÁGINAS NO ENCONTRADAS (OPCIONAL) --- */}
