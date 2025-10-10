@@ -169,6 +169,14 @@ export default function Footer() {
                 >
                   Trabaja con nosotros
                 </Link>
+                <a
+                  href="https://www.transpesa.com.pe/sistema/login.php"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm sm:text-base md:text-sm lg:text-base text-white xl:text-gray-600 hover:text-gray-200 xl:hover:text-red-600 transition-colors font-medium"
+                >
+                  Intranet
+                </a>
               </div>
             </div>
           </div>
