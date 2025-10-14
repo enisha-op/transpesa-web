@@ -1,35 +1,41 @@
-import { useTranslation, Trans } from 'react-i18next'; // 1. Importa
+import { useTranslation, Trans } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 export default function TeamSection() {
-  const { t } = useTranslation(); // 2. Usa el hook
+  const { t } = useTranslation();
 
-  // 3. El array ahora usa claves de traducción
   const teamMembers = [
-    {
-      id: 1,
-      nameKey: "teamMember1Name",
-      positionKey: "teamMember1Position",
-      image: "/images/equipo.webp",
-    },
-    {
-      id: 2,
-      nameKey: "teamMember2Name",
-      positionKey: "teamMember2Position",
-      image: "/images/equipo.webp",
-    },
-    {
-      id: 3,
-      nameKey: "teamMember3Name",
-      positionKey: "teamMember3Position",
-      image: "/images/equipo.webp",
-    },
+    { id: 1, nameKey: "teamMember1Name", positionKey: "teamMember1Position", image: "/images/equipo.webp" },
+    { id: 2, nameKey: "teamMember2Name", positionKey: "teamMember2Position", image: "/images/equipo.webp" },
+    { id: 3, nameKey: "teamMember3Name", positionKey: "teamMember3Position", image: "/images/equipo.webp" },
   ];
 
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
+
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="py-16 lg:py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16">
-          {/* 4. Traduce el título y subtítulo */}
+        {/* 👇 AQUÍ LA CORRECCIÓN: Aumentamos el margen inferior de 16 a 24 👇 */}
+        <motion.div 
+          className="text-center mb-24"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <h2 className="text-3xl sm:text-4xl font-bold text-black mb-4">
             <Trans i18nKey="teamMainTitle">
               <span className="text-red-600" />
@@ -38,26 +44,48 @@ export default function TeamSection() {
           <p className="text-base lg:text-lg text-gray-600 max-w-2xl mx-auto">
             {t('teamMainSubtitle')}
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 md:gap-y-20 max-w-5xl mx-auto">
+        <motion.div 
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-32 max-w-5xl mx-auto"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {teamMembers.map((member) => {
-            const translatedName = t(member.nameKey); // Traducimos el nombre una vez para reutilizarlo
+            const translatedName = t(member.nameKey);
             return (
-              <div
+              <motion.div
                 key={member.id}
-                className="relative before:content-[''] before:absolute before:top-[-12px] before:left-[-12px] before:w-16 before:h-16 sm:before:w-24 sm:before:h-24 before:border-t-4 before:border-l-4 before:border-red-600 before:rounded-tl-3xl after:content-[''] after:absolute after:bottom-[-12px] after:right-[-12px] after:w-16 after:h-16 sm:after:w-24 sm:after:h-24 after:border-b-4 after:border-r-4 after:border-red-600 after:rounded-br-3xl"
+                className="relative mx-4"
+                variants={itemVariants}
               >
-                <div className="bg-white shadow-xl rounded-2xl p-6 text-center h-full">
-                  <div className="w-32 h-40 sm:w-36 sm:h-48 mx-auto mb-6 rounded-xl overflow-hidden shadow-lg">
+                <motion.div 
+                  className="absolute -top-3 -left-3 w-16 h-16 sm:w-24 sm:h-24 border-t-4 border-l-4 border-red-600 rounded-tl-3xl"
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                />
+                <motion.div 
+                  className="absolute -bottom-3 -right-3 w-16 h-16 sm:w-24 sm:h-24 border-b-4 border-r-4 border-red-600 rounded-br-3xl"
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                />
+                <motion.div 
+                  className="bg-white shadow-xl rounded-2xl p-6 text-center h-full relative z-10"
+                  whileHover={{ y: -8, scale: 1.03, transition: { type: 'spring', stiffness: 300 } }}
+                >
+                  <div className="w-32 h-40 sm:w-36 sm:h-48 mx-auto -mt-20 mb-6 rounded-xl overflow-hidden shadow-lg">
                     <img
                       src={member.image}
-                      // 5. Traduce el 'alt' text, insertando el nombre traducido
                       alt={t('teamImageAlt', { name: translatedName })}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  {/* 6. Traduce el nombre, puesto y botón */}
                   <h3 className="text-xl font-bold text-gray-800">{translatedName}</h3>
                   <p className="text-gray-500 mb-5">{t(member.positionKey)}</p>
                   <button
@@ -65,11 +93,11 @@ export default function TeamSection() {
                   >
                     {t('teamButtonLinkedIn')}
                   </button>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             )
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

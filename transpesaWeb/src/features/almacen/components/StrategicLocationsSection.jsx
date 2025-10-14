@@ -36,7 +36,7 @@ const locations = [
 
 export default function StrategicLocationsMinimal() {
   return (
-    <section className="bg-gradient-to-br from-gray-50 to-white py-20 px-4">
+    <section className="bg-gradient-to-br from-gray-50 to-white py-20 px-4 overflow-hidden">
       <div className="container mx-auto max-w-7xl">
         {/* Header mejorado */}
         <motion.div

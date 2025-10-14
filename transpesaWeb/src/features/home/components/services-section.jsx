@@ -3,7 +3,6 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Link } from "react-router-dom"
 
-
 export default function TiposCargaSection() {
   const services = [
     {
@@ -27,15 +26,14 @@ export default function TiposCargaSection() {
       title: "Aduanas",
       description:
         "Gestión aduanera ágil y confiable para tus operaciones de importación y exportación.",
-      link: "https://amt.pe/", // <-- URL actualizada
-      external: true,           // <-- Propiedad para identificar enlace externo
+      link: "https://amt.pe/",
+      external: true,
       imageUrl: "/almacenajeHero.jpg",
     },
   ]
   
   const [activeBg, setActiveBg] = useState(services[0].imageUrl)
 
-  // Componente reutilizable para el botón
   const ServiceButton = ({ service }) => {
     const commonClasses = "inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg text-base font-semibold transition-colors";
     const content = (
@@ -67,14 +65,14 @@ export default function TiposCargaSection() {
       <div className="lg:hidden">
         <div className="space-y-0">
             {services.map(service => (
-                <div key={service.id} className="relative w-full h-[80vh] shadow-xl">
+                // 👇 AQUÍ LA CORRECCIÓN: Reducimos la altura de 80vh a 60vh 👇
+                <div key={service.id} className="relative w-full h-[40vh] shadow-xl">
                     <img src={service.imageUrl} alt={service.title} className="absolute inset-0 w-full h-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
                     <div className="relative z-10 h-full flex flex-col justify-end p-8 text-white">
                         <h3 className="text-3xl font-bold">{service.title}</h3>
                         <p className="mt-2 text-base leading-relaxed">{service.description}</p>
                         <div className="mt-6">
-                            {/* --- MODIFICACIÓN 2: Usar el botón condicional --- */}
                             <ServiceButton service={service} />
                         </div>
                     </div>
@@ -122,26 +120,7 @@ export default function TiposCargaSection() {
                 <div className="opacity-0 max-w-md transform translate-y-8 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                   <p className="text-lg leading-relaxed mb-6">{service.description}</p>
                   <div className="flex items-center">
-                    {/* --- MODIFICACIÓN 3: Usar el botón condicional --- */}
-                    {service.external ? (
-                      <a 
-                        href={service.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg flex items-center gap-2 transition-colors"
-                      >
-                        <span className="font-medium">Ver más</span>
-                        <ArrowRight className="w-5 h-5" />
-                      </a>
-                    ) : (
-                      <Link
-                        to={service.link}
-                        className="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg flex items-center gap-2 transition-colors"
-                      >
-                        <span className="font-medium">Ver más</span>
-                        <ArrowRight className="w-5 h-5" />
-                      </Link>
-                    )}
+                    <ServiceButton service={service} />
                   </div>
                 </div>
               </div>

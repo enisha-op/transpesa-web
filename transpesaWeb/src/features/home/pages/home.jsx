@@ -14,7 +14,8 @@ import Footer from "@/components/footer";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen relative overflow-x-hidden">
+    // overflow-x-hidden
+    <main className="min-h-screen relative ">
       <Header />
       <HeroSection />
       <SecondaryNav />
