@@ -9,7 +9,7 @@ export default function TiposCargaSection() {
       id: 1,
       title: "Almacenaje",
       description:
-        "Combina experiencia y tecnología para optimizar la gestión logística de tu empresa. Con infraestructura moderna y sistemas digitales de control, garantizamos trazabilidad, seguridad y eficiencia en cada operación.",
+        "Combina experiencia y tecnología para optimizar la gestión logística de tu empresa.",
       link: "/almacenaje",
       imageUrl: "/almacenajeService.jpg",
     },

@@ -16,7 +16,7 @@ export default function Hero({ titleKey, imageUrl, altText }) {
         aria-hidden="true"
       />
       <div className="relative z-20 text-center text-white px-4">
-        <h1 className="font-inria italic font-bold text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
+        <h1 className="font-inria italic font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
           {t(titleKey)} {/* 3. Usa t() para mostrar el texto traducido según la clave */}
         </h1>
       </div>
