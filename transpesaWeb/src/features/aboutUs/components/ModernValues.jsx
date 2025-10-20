@@ -10,7 +10,7 @@ const cardData = [
   },
   {
     title: 'VISIÓN',
-    imageSrc: '/camion2.jpg',
+    imageSrc: '/camion2.webp',
     icon: <Goal className="h-8 w-8 text-white" />,
     content: 'Para el 2030, ser reconocidos como un operador logístico de clase mundial, líder en soluciones integrales y sostenibles, que trascienda fronteras y revolucione la experiencia logística mediante la innovación y tecnología.',
   },

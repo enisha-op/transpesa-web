@@ -10,7 +10,7 @@ export default function ServicePage() {
         <Header />
         <Hero 
           titleKey="heroServices" 
-          imageUrl="/camion2.jpg" 
+          imageUrl="/camion2.webp" 
           altText="Imagen Hero Servicios" 
         />
         <BusinessLines />

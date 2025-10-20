@@ -58,7 +58,7 @@ export default function BusinessLines() {
 
         {/* Versión Móvil Traducida */}
         <div className="lg:hidden space-y-8">
-          <motion.div
+          {/* <motion.div
             className="w-full h-72 rounded-2xl overflow-hidden shadow-2xl"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -66,7 +66,7 @@ export default function BusinessLines() {
             transition={{ duration: 0.8 }}
           >
             <img src="/flota-camiones.jpg" alt={t('businessLinesImageAlt')} className="w-full h-full object-cover" />
-          </motion.div>
+          </motion.div> */}
           {services.map((service, index) => {
             const IconComponent = service.icon
             return (

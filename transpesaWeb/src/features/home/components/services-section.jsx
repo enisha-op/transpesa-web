@@ -19,7 +19,7 @@ export default function TiposCargaSection() {
       description:
         "Impulsamos el crecimiento logístico con una flota moderna, procesos eficientes y un compromiso constante con la excelencia.",
       link: "/transporte",
-      imageUrl: "/camion2.jpg",
+      imageUrl: "/camion2.webp",
     },
     {
       id: 3,

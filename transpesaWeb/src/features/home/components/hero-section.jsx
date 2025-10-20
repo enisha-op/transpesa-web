@@ -9,7 +9,7 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="camion1.jpg"
+          src="camion1.webp"
           alt={t('homeHeroAltText')} // 3. Usa t() para traducir
           className="w-full h-full object-cover object-center"
         />

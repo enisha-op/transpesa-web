@@ -10,24 +10,47 @@ import StrategicPartners from "../../home/components/strategic-partners";
 
 
 import Footer from "@/components/footer";
-
+import SecondaryNavAlmacen from "../components/SecondaryNavAlmacen"; 
 
 export default function AlmacenPage() {
   return (
-    <main className="min-h-screen relative overflow-x-hidden">
+    <main className="min-h-screen relative"> 
         <Header />
         <Hero 
           titleKey="heroStorage" 
           imageUrl="/almacenajeHero.jpg" 
           altText="Imagen Hero Almacén" 
         />
-        <AboutAltraSection />
-        <FeaturesSection />
-        <QualitySection />
-        <TiposAlmacenesSection />
-        <LocationsSection />
-        <TeamSection />
-        <StrategicPartners />
+        <SecondaryNavAlmacen />
+
+        <section id="nosotros-almacen">
+          <AboutAltraSection />
+        </section>
+
+        <section id="caracteristicas-almacen">
+          <FeaturesSection />
+        </section>
+
+        <section id="calidad-almacen">
+          <QualitySection />
+        </section>
+
+        <section id="tipos-almacenes">
+          <TiposAlmacenesSection />
+        </section>
+
+        <section id="ubicaciones-almacen">
+          <LocationsSection />
+        </section>
+
+        <section id="equipo-almacen">
+          <TeamSection />
+        </section>
+        
+        <section id="aliados-almacen">
+          <StrategicPartners />
+        </section>
+        
         <Footer />
     </main>
   )

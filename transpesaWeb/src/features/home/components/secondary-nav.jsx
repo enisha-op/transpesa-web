@@ -4,8 +4,7 @@ export default function SecondaryNav() {
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-40"> 
       <div className="container mx-auto px-4">
-        {/* 👇 LA ÚNICA LÍNEA QUE CAMBIÓ FUE ESTA 👇 */}
-        <div className="flex items-center justify-center space-x-8 py-4 overflow-x-auto">
+        <div className="flex items-center justify-start md:justify-center space-x-8 py-4 overflow-x-auto">
           
           <Link
             to="descripcion"

@@ -14,7 +14,7 @@ export default function VisionSection() {
               <img src="/imageHero.jpg" alt={t('visionAltAirplane')} className="w-full h-full object-cover" />
             </div>
             <div className="absolute bottom-8 left-0 w-44 h-44 rounded-full overflow-hidden border-4 border-white shadow-xl z-0">
-              <img src="/camion2.jpg" alt={t('visionAltTruck')} className="w-full h-full object-cover" />
+              <img src="/camion2.webp" alt={t('visionAltTruck')} className="w-full h-full object-cover" />
             </div>
             <div className="absolute bottom-8 right-0 w-44 h-44 rounded-full overflow-hidden border-4 border-white shadow-xl z-0">
               <img src="/almacenajeHero.jpg" alt={t('visionAltWorker')} className="w-full h-full object-cover" />
@@ -53,7 +53,7 @@ export default function VisionSection() {
               <img src="/imageHero.jpg" alt={t('visionAltAirplane')} className="w-full h-full object-cover" />
             </div>
             <div className="absolute bottom-24 left-4 xl:left-12 w-[240px] h-[240px] xl:w-[280px] xl:h-[280px] rounded-full overflow-hidden border-[6px] border-white shadow-xl z-0">
-              <img src="/camion2.jpg" alt={t('visionAltTruck')} className="w-full h-full object-cover" />
+              <img src="/camion2.webp" alt={t('visionAltTruck')} className="w-full h-full object-cover" />
             </div>
             <div className="absolute bottom-24 right-4 xl:right-12 w-[240px] h-[240px] xl:w-[280px] xl:h-[280px] rounded-full overflow-hidden border-[6px] border-white shadow-xl z-0">
               <img src="/almacenajeHero.jpg" alt={t('visionAltWorker')} className="w-full h-full object-cover" />

@@ -10,7 +10,7 @@ const timelineData = [
     year: '1980',
     title: 'Expansión Nacional',
     description: 'Se consolida la presencia en las principales regiones del país, construyendo una red de operaciones robusta y confiable.',
-    image: '/camion2.jpg',
+    image: '/camion2.webp',
   },
   {
     year: '1990',

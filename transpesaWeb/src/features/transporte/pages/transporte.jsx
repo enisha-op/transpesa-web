@@ -9,23 +9,46 @@ import StrategicPartners from "../../home/components/strategic-partners";
 
 import Footer from "@/components/footer";
 
+import SecondaryNavTransporte from "../components/SecondaryNavTransporte"; 
+
 
 export default function TransportePage() {
   return (
-    <main className="min-h-screen relative overflow-x-hidden">
-        <Header />
-        <Hero 
-          titleKey="heroTransport" 
-          imageUrl="/transporteHero.jpg" 
-          altText="Imagen Hero Transporte" 
-        />
+    <main className="min-h-screen relative"> {/* Quitamos overflow-x-hidden para que el sticky funcione */}
+      <Header />
+      <Hero 
+        titleKey="heroTransport" 
+        imageUrl="/transporteHero.jpg" 
+        altText="Imagen Hero Transporte" 
+      />
+
+      <SecondaryNavTransporte />
+
+      <section id="datos-clave">
         <KeyStats />
+      </section>
+
+      <section id="ventajas">
         <WhyChooseUs />
+      </section>
+
+      <section id="calidad">
         <QualitySection />
+      </section>
+
+      <section id="tipos-carga">
         <TiposCargaSection />
+      </section>
+      
+      <section id="tecnologia">
         <InnovacionTecnologica />
+      </section>
+
+      <section id="aliados">
         <StrategicPartners />
-        <Footer />
+      </section>
+
+      <Footer />
     </main>
   )
 }
