@@ -114,6 +114,7 @@ export default function StrategicLocationsMinimal() {
                   src="/mapa-peru-rojo.png"
                   alt="Mapa de Perú"
                   className="w-full max-w-lg mx-auto h-auto filter drop-shadow-2xl"
+                  loading="lazy"
                 />
               </div>
 

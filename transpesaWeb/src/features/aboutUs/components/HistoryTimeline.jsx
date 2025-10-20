@@ -22,7 +22,7 @@ const timelineData = [
     year: '2010',
     title: 'Liderazgo en Sostenibilidad',
     description: 'Implementamos políticas de responsabilidad social y ambiental, comprometidos con generar un impacto positivo en la sociedad.',
-    image: '/imageHero.jpg',
+    image: '/imageHero.webp',
   },
 ];
 
@@ -46,7 +46,7 @@ const TextBlock = ({ event, align }) => (
 );
 const ImageBlock = ({ event }) => (
   <div className="relative p-4 border-2 border-gray-100 rounded-lg">
-    <img src={event.image} alt={event.title} className="rounded-md w-full" />
+    <img src={event.image} alt={event.title} className="rounded-md w-full" loading="lazy" />
     <div className="absolute -top-2 -right-2 h-1/4 w-2 bg-red-600" />
     <div className="absolute -top-2 -right-2 w-1/4 h-2 bg-red-600" />
   </div>
@@ -59,7 +59,7 @@ const MobileEventCard = ({ event }) => (
       <h2 className="text-white text-3xl font-bold font-inria">{event.year}</h2>
     </div>
     <div className="p-5">
-      <img src={event.image} alt={event.title} className="rounded-md w-full mb-4" />
+      <img src={event.image} alt={event.title} className="rounded-md w-full mb-4" loading="lazy" />
       <h3 className="text-xl font-bold text-gray-800">{event.title}</h3>
       <p className="mt-2 text-gray-600">{event.description}</p>
     </div>

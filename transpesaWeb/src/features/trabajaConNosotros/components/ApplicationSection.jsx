@@ -204,6 +204,7 @@ const ApplicationSection = forwardRef(({ selectedJob }, ref) => {
                   src="/logo-transpesa-blanco.png"
                   alt={t("applicationBrandLogoAlt")}
                   className="h-auto w-auto object-contain"
+                  loading="lazy"
                 />
               </div>
             </div>

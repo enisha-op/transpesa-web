@@ -40,6 +40,7 @@ export default function StrategicPartners() {
                   src={partner.src}
                   alt={t(partner.altKey)}
                   className="max-h-full w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
             ))}

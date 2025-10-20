@@ -210,7 +210,7 @@ export default function ContactSection() {
           <div className="relative hidden md:block">
             <div className="absolute inset-0 -top-4 -right-4 bg-red-600" style={{ zIndex: 0 }}></div>
             <div className="relative h-full w-4/5" style={{ zIndex: 1 }}>
-              <img src="/camion4.jpg" alt={t("contactImageAlt")} className="h-full w-full object-cover" />
+              <img src="/camion4.jpg" alt={t("contactImageAlt")} className="h-full w-full object-cover" loading="lazy" />
             </div>
           </div>
         </div>

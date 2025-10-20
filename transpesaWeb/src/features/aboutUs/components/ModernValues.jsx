@@ -16,7 +16,7 @@ const cardData = [
   },
   {
     title: 'VALORES',
-    imageSrc: '/imageHero.jpg',
+    imageSrc: '/imageHero.webp',
     icon: <Gem className="h-8 w-8 text-white" />,
     content: ['Innovación', 'Integridad', 'Seguridad', 'Responsabilidad', 'Excelencia', 'Trabajo en Equipo'],
   },

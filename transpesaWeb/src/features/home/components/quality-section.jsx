@@ -32,6 +32,7 @@ export default function QualitySection() {
                 src={cert.src}
                 alt={t(cert.altKey)}
                 className="w-full h-full object-contain"
+                loading="lazy"
               />
             </div>
           ))}

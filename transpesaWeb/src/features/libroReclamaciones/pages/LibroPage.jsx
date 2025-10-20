@@ -11,7 +11,7 @@ export default function LibroPage() {
         <Header />
         <Hero 
           titleKey="heroLibroReclamaciones" 
-          imageUrl="/imageHero.jpg" 
+          imageUrl="/imageHero.webp" 
           altText="Imagen Hero Nosotros" 
         />
         <LibroReclamacionesPage />

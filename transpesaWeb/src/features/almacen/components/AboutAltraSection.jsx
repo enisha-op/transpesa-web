@@ -23,7 +23,7 @@ export default function AboutAltraSection() {
           {/* --- Columna Izquierda: Información --- */}
           {/* 👇 CAMBIO: Más padding interno y espaciado */}
           <div className="flex flex-col px-4 lg:px-8">
-            <img src="/logo-transpesa.png" alt="Altra Almacenes Logo" className="h-14 w-auto self-start mb-2" />
+            <img src="/logo-transpesa.png" alt="Altra Almacenes Logo" className="h-14 w-auto self-start mb-2" loading="lazy" />
 
             {/* 👇 CAMBIO: Mejor espaciado de texto y legibilidad */}
             <p className="mt-8 text-base leading-relaxed text-gray-600 md:text-lg lg:text-xl max-w-lg">
@@ -61,7 +61,7 @@ export default function AboutAltraSection() {
             {/* 👇 CAMBIO: Posicionamiento ajustado del elemento de fondo */}
             <div className="absolute top-4 right-4 lg:right-8 h-4/5 w-4/5 bg-red-600 rounded-l-lg"></div>
             <div className="absolute bottom-4 left-4 lg:left-8 h-full w-5/6 overflow-hidden rounded-lg shadow-2xl z-10">
-              <img src="/camion4.jpg" alt="Camión de Altra" className="h-full w-full object-cover" />
+              <img src="/camion4.jpg" alt="Camión de Altra" className="h-full w-full object-cover" loading="lazy" />
             </div>
           </div>
         </div>

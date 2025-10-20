@@ -16,6 +16,7 @@ export default function AboutSection() {
               className="h-20 w-auto"
               src="/logo-transpesa.png"
               alt="Logo de Grupo Transpesa" 
+              loading="lazy"
             />
             <div className="mt-8">
               {/* 👇 CAMBIO: Texto más pequeño para mejor jerarquía visual */}

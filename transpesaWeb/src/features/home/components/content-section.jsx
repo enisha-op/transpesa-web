@@ -42,6 +42,7 @@ export default function ContentSection() {
                 src="/camion2.webp"
                 alt={t('homeContentImageAlt')}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>

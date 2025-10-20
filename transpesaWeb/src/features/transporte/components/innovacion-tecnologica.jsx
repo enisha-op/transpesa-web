@@ -41,7 +41,7 @@ const TechnologyCard = ({ tech, index }) => {
       {/* --- Versión Móvil (Estática) --- */}
       {/* Visible hasta el breakpoint 'md', luego se oculta */}
       <div className="md:hidden bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-        <img src={tech.imageUrl} alt={tech.title} className="w-full h-48 object-cover" />
+        <img src={tech.imageUrl} alt={tech.title} className="w-full h-48 object-cover" loading="lazy" />
         <div className="p-6 text-center">
           <div className="w-20 h-20 bg-red-600 rounded-full flex items-center justify-center mb-4 shadow-lg mx-auto -mt-16 relative z-10 border-4 border-white">
             <tech.icon className="w-10 h-10 text-white" />

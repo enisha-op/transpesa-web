@@ -37,7 +37,7 @@ const PostBody = ({ content }) => {
 // Componente para la biografía del autor (sin cambios)
 const AuthorBio = ({ author, authorImage, authorBio }) => (
   <div className="mt-16 pt-8 border-t border-gray-200 flex items-center gap-6 bg-gray-50 p-6 rounded-lg">
-    <img src={authorImage} alt={author} className="w-20 h-20 rounded-full object-cover" />
+    <img src={authorImage} alt={author} className="w-20 h-20 rounded-full object-cover" loading="lazy"/>
     <div>
       <p className="text-gray-500 text-sm">Escrito por</p>
       <h4 className="text-xl font-bold text-gray-900">{author}</h4>
@@ -136,6 +136,7 @@ export default function SinglePostPage() {
             src={post.imageUrl} 
             alt={post.title}
             className="mt-16 w-full h-auto max-h-[500px] object-cover rounded-2xl shadow-xl"
+            loading="lazy"
           />
 
           <div className="max-w-3xl mx-auto mt-16">

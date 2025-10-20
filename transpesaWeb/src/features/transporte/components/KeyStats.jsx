@@ -21,6 +21,7 @@ export default function KeyStats() {
               src="/logo-transpesa.png"
               alt="Logo Grupo Transpesa"
               className="w-36 sm:w-48 mx-auto lg:mx-0"
+              loading="lazy"
             />
             <p className="text-gray-600 leading-relaxed">
               Impulsamos el crecimiento logístico con una flota moderna, procesos eficientes y un compromiso constante con la excelencia.

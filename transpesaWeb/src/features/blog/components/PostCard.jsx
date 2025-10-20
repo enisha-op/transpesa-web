@@ -14,6 +14,7 @@ export default function PostCard({ post }) {
             src={imageUrl || "/placeholder.svg"}
             alt={`Imagen para el post "${title}"`}
             className="w-full h-56 object-cover transform group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
           />
         </Link>
       </div>

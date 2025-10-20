@@ -43,7 +43,7 @@ export default function TiposAlmacenesSection() {
             {services.map(service => (
                 // 👇 CAMBIO: Cada tarjeta ya no tiene bordes redondeados y es más alta (80% de la altura de la pantalla)
                 <div key={service.id} className="relative w-full h-[40vh] shadow-xl">
-                    <img src={service.imageUrl} alt={service.title} className="absolute inset-0 w-full h-full object-cover" />
+                    <img src={service.imageUrl} alt={service.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
                     <div className="relative z-10 h-full flex flex-col justify-end p-8 text-white">
                         <h3 className="text-3xl font-bold">{service.title}</h3>

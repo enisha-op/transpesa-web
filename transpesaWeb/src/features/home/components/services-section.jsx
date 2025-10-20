@@ -67,7 +67,7 @@ export default function TiposCargaSection() {
             {services.map(service => (
                 // 👇 AQUÍ LA CORRECCIÓN: Reducimos la altura de 80vh a 60vh 👇
                 <div key={service.id} className="relative w-full h-[40vh] shadow-xl">
-                    <img src={service.imageUrl} alt={service.title} className="absolute inset-0 w-full h-full object-cover" />
+                    <img src={service.imageUrl} alt={service.title} className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
                     <div className="relative z-10 h-full flex flex-col justify-end p-8 text-white">
                         <h3 className="text-3xl font-bold">{service.title}</h3>
