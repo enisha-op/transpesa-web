@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { useState } from "react"
+import { useState, useEffect } from "react" // <-- 1. IMPORTA useEffect
 
 // --- Componente de Carga ---
 import LoadingScreen from "./components/LoadingScreen"
@@ -18,9 +18,7 @@ import BlogPage from "./features/blog/pages/BlogPage"
 import SinglePostPage from "./features/blog/pages/SinglePostPage"
 import AnuncioModal from "./components/AnuncioModal"
 
-
 // --- Componentes Globales ---
-
 import ScrollToTop from "./components/ScrollToTop"
 import ScrollToTopButton from "./components/ScrollToTopButton"
 
@@ -28,28 +26,52 @@ import ScrollToTopButton from "./components/ScrollToTopButton"
 import LoginPage from "../src/features/admin/LoginPage"
 import AdminLayout from "../src/features/admin/components/AdminLayout"
 import DashboardPage from "../src/features/admin/pages/DashboardPage"
-// import FormsPage from "@/features/admin/pages/FormsPage"
 import JobsPage from "@/features/admin/pages/JobsPage"
 import ApplicationsPage from "@/features/admin/pages/ApplicationsPage"
 import AnunciosPage from "./features/admin/pages/AnunciosPage"
 import BlogPageAdmin from "./features/admin/pages/BlogPageAdmin"
 import ContactoFormPage from "./features/admin/pages/ContactoFormPage"
 
-// Para el mapa de Leaflet
 import "leaflet/dist/leaflet.css"
 
 function App() {
   const [isLoading, setIsLoading] = useState(() => {
+    // La lógica inicial para decidir si mostrar el loader se mantiene
     return !sessionStorage.getItem("hasLoadedBefore")
   })
 
-  const handleLoadingComplete = () => {
-    sessionStorage.setItem("hasLoadedBefore", "true")
-    setIsLoading(false)
-  }
+  // --- 2. AÑADE ESTE useEffect PARA SINCRONIZAR LA CARGA ---
+  useEffect(() => {
+    // Si no necesitamos mostrar el loader, no hacemos nada.
+    if (!isLoading) return;
 
+    // Creamos una promesa que se resolverá cuando la imagen del Hero haya cargado.
+    const imageLoadPromise = new Promise(resolve => {
+      const img = new Image();
+      img.src = '/camion1.webp'; // La imagen importante que queremos precargar
+      img.onload = resolve;
+      img.onerror = resolve; // Resolvemos incluso si hay un error para no bloquear la app
+    });
+
+    // Creamos una promesa que se resolverá después de un tiempo mínimo (ej. 2 segundos).
+    // Esto asegura que la animación de tu LoadingScreen tenga tiempo de ejecutarse.
+    const minTimePromise = new Promise(resolve => {
+      setTimeout(resolve, 2000); // 2000ms = 2 segundos
+    });
+
+    // Promise.all espera a que AMBAS promesas se completen.
+    Promise.all([imageLoadPromise, minTimePromise]).then(() => {
+      sessionStorage.setItem("hasLoadedBefore", "true");
+      setIsLoading(false);
+    });
+
+  }, [isLoading]); // Se ejecutará solo cuando el estado `isLoading` cambie.
+
+
+  // --- 3. SIMPLIFICAMOS EL RENDERIZADO ---
+  // El componente App ahora controla cuándo se oculta el LoadingScreen.
   if (isLoading) {
-    return <LoadingScreen onLoadingComplete={handleLoadingComplete} />
+    return <LoadingScreen />
   }
 
   return (
@@ -58,7 +80,7 @@ function App() {
       <ScrollToTopButton />
       <AnuncioModal />
       <Routes>
-        {/* --- RUTAS PÚBLICAS --- */}
+        {/* --- TUS RUTAS (SIN CAMBIOS) --- */}
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicePage />} />
@@ -71,22 +93,16 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<SinglePostPage />} />
 
-
-        {/* --- RUTAS DE AUTENTICACIÓN Y ADMIN --- */}
         <Route path="/login" element={<LoginPage />} />
-
         <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<DashboardPage />} />
           <Route path="applications" element={<ApplicationsPage />} />
-          {/* <Route path="formularios" element={<FormsPage />} /> */}
           <Route path="trabajos" element={<JobsPage />} />
           <Route path="anuncios" element={<AnunciosPage />} />
           <Route path="blog" element={<BlogPageAdmin />} />
           <Route path="contacts" element={<ContactoFormPage />} />
-
         </Route>
-
-        {/* --- RUTA PARA PÁGINAS NO ENCONTRADAS (OPCIONAL) --- */}
+        
         <Route path="*" element={<h1>404: Página no encontrada</h1>} />
       </Routes>
     </Router>

@@ -4,7 +4,7 @@ const timelineData = [
     year: '1955',
     title: 'Fundación de Transpesa',
     description: 'Nace como un operador logístico con la misión de innovar en el transporte y ser un referente en soluciones integrales y sostenibles.',
-    image: '/camion1.jpg',
+    image: '/camion1.webp',
   },
   {
     year: '1980',
@@ -16,7 +16,7 @@ const timelineData = [
     year: '1990',
     title: 'Innovación Tecnológica',
     description: 'Pioneros en la adopción de tecnología para la gestión de flotas y almacenes, mejorando la eficiencia y seguridad en cada servicio.',
-    image: '/camion1.jpg',
+    image: '/camion1.webp',
   },
   {
     year: '2010',

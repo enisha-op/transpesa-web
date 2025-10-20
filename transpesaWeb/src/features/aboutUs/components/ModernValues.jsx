@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const cardData = [
   {
     title: 'MISIÓN',
-    imageSrc: '/camion1.jpg',
+    imageSrc: '/camion1.webp',
     icon: <Target className="h-8 w-8 text-white" />,
     content: 'Brindar soluciones logísticas integrales y especializadas que conecten negocios y personas, impulsando el crecimiento de nuestros clientes y la rentabilidad de nuestros socios, con innovación, seguridad y responsabilidad social.',
   },
