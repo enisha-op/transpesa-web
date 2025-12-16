@@ -4,25 +4,25 @@ const timelineData = [
     year: '1955',
     title: 'Fundación de Transpesa',
     description: 'Nace como un operador logístico con la misión de innovar en el transporte y ser un referente en soluciones integrales y sostenibles.',
-    image: '/camion1.webp',
+    image: '/Nosotros/1955.png',
   },
   {
     year: '1980',
     title: 'Expansión Nacional',
     description: 'Se consolida la presencia en las principales regiones del país, construyendo una red de operaciones robusta y confiable.',
-    image: '/camion2.webp',
+    image: '/Nosotros/1980.jpg',
   },
   {
     year: '1990',
     title: 'Innovación Tecnológica',
     description: 'Pioneros en la adopción de tecnología para la gestión de flotas y almacenes, mejorando la eficiencia y seguridad en cada servicio.',
-    image: '/camion1.webp',
+    image: '/Nosotros/1990.jpg',
   },
   {
     year: '2010',
     title: 'Liderazgo en Sostenibilidad',
     description: 'Implementamos políticas de responsabilidad social y ambiental, comprometidos con generar un impacto positivo en la sociedad.',
-    image: '/imageHero.webp',
+    image: '/Nosotros/2010.png',
   },
 ];
 

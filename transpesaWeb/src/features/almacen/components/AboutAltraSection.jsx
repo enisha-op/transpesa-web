@@ -61,7 +61,7 @@ export default function AboutAltraSection() {
             {/* 👇 CAMBIO: Posicionamiento ajustado del elemento de fondo */}
             <div className="absolute top-4 right-4 lg:right-8 h-4/5 w-4/5 bg-red-600 rounded-l-lg"></div>
             <div className="absolute bottom-4 left-4 lg:left-8 h-full w-5/6 overflow-hidden rounded-lg shadow-2xl z-10">
-              <img src="/camion4.jpg" alt="Camión de Altra" className="h-full w-full object-cover" loading="lazy" />
+              <img src="/Almacen/almacen03.png" alt="Camión de Altra" className="h-full w-full object-cover" loading="lazy" />
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ export default function TransportePage() {
       <Header />
       <Hero 
         titleKey="heroTransport" 
-        imageUrl="/transporteHero.jpg" 
+        imageUrl="/Inicio/Transporte.jpg" 
         altText="Imagen Hero Transporte" 
       />
 

@@ -51,7 +51,7 @@ export default function BlogPage() {
       
       <Hero 
         titleKey="heroBlog" 
-        imageUrl="/images/image2.jpg" 
+        imageUrl="/Blog.jpg" 
         altText="Imagen Hero Blog" 
       />
       

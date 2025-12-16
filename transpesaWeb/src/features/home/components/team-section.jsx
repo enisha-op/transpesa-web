@@ -5,9 +5,11 @@ export default function TeamSection() {
   const { t } = useTranslation();
 
   const teamMembers = [
-    { id: 1, nameKey: "teamMember1Name", positionKey: "teamMember1Position", image: "/images/equipo.webp" },
-    { id: 2, nameKey: "teamMember2Name", positionKey: "teamMember2Position", image: "/images/equipo.webp" },
-    { id: 3, nameKey: "teamMember3Name", positionKey: "teamMember3Position", image: "/images/equipo.webp" },
+    { id: 1, nameKey: "teamMember1Name", positionKey: "teamMember1Position", image: "/Inicio/team01.jpg" },
+    { id: 2, nameKey: "teamMember2Name", positionKey: "teamMember2Position", image: "/Inicio/team05.jpg" },
+    { id: 3, nameKey: "teamMember3Name", positionKey: "teamMember3Position", image: "/Inicio/team03.jpg" },
+    { id: 4, nameKey: "teamMember4Name", positionKey: "teamMember4Position", image: "/Inicio/team02.jpg" },
+    { id: 5, nameKey: "teamMember5Name", positionKey: "teamMember5Position", image: "/Inicio/team04.jpg" },
   ];
 
   const containerVariants = {
@@ -28,7 +30,7 @@ export default function TeamSection() {
   return (
     <section className="py-16 lg:py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        {/* 👇 AQUÍ LA CORRECCIÓN: Aumentamos el margen inferior de 16 a 24 👇 */}
+        
         <motion.div 
           className="text-center mb-24"
           initial={{ opacity: 0, y: -30 }}
@@ -46,8 +48,10 @@ export default function TeamSection() {
           </p>
         </motion.div>
 
+        {/* 👇 CAMBIO 1: Usar Flexbox centrado en lugar de Grid 👇 */}
+        {/* Esto asegura que si sobran elementos en la última fila, se centren */}
         <motion.div 
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-32 max-w-5xl mx-auto"
+          className="flex flex-wrap justify-center gap-x-8 gap-y-32 max-w-6xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -58,7 +62,9 @@ export default function TeamSection() {
             return (
               <motion.div
                 key={member.id}
-                className="relative mx-4"
+                /* 👇 CAMBIO 2: Anchos definidos para simular columnas 👇 */
+                /* w-full en móvil, ~45% en tablet (2 cols), ~30% en desktop (3 cols) */
+                className="relative mx-4 w-full md:w-[calc(50%-4rem)] lg:w-[calc(33.33%-4rem)] max-w-sm"
                 variants={itemVariants}
               >
                 <motion.div 

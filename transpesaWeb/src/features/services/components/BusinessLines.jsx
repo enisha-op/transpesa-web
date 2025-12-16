@@ -12,13 +12,13 @@ export default function BusinessLines() {
       icon: Truck,
       titleKey: "blTransportTitle",
       descriptionKey: "blTransportDesc",
-      imageUrl: "/flota-camiones.jpg",
+      imageUrl: "/Inicio/Transporte.jpg",
     },
     {
       icon: Warehouse,
       titleKey: "blStorageTitle",
       descriptionKey: "blStorageDesc",
-      imageUrl: "/almacenajeService.jpg",
+      imageUrl: "/Inicio/Almacen.png",
     },
     {
       icon: ShieldCheck,

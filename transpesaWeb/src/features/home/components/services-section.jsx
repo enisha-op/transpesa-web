@@ -11,7 +11,7 @@ export default function TiposCargaSection() {
       description:
         "Combina experiencia y tecnología para optimizar la gestión logística de tu empresa.",
       link: "/almacenaje",
-      imageUrl: "/almacenajeService.jpg",
+      imageUrl: "/Inicio/Almacen.png",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ export default function TiposCargaSection() {
       description:
         "Impulsamos el crecimiento logístico con una flota moderna, procesos eficientes y un compromiso constante con la excelencia.",
       link: "/transporte",
-      imageUrl: "/camion2.webp",
+      imageUrl: "/Inicio/Transporte.jpg",
     },
     {
       id: 3,

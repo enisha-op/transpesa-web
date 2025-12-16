@@ -10,7 +10,7 @@ export default function TiposAlmacenesSection() {
       description:
         "Unidades exclusivas para operaciones personalizadas, diseñadas para responder a las necesidades específicas de cada cliente.",
       link: "#",
-      imageUrl: "Almacen/tiposAlmacen/almacenGranos.jpg",
+      imageUrl: "Almacen/almacen02.png",
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export default function TiposAlmacenesSection() {
       description:
         "Transporte seguro y especializado de concentrados de mineral, cumpliendo con las más estrictas normativas del sector.",
       link: "#",
-      imageUrl: "Almacen/tiposAlmacen/almacenLogistico.jpg",
+      imageUrl: "Almacen/Almacen.png",
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ export default function TiposAlmacenesSection() {
       description:
         "Distribución segura y eficiente de combustibles líquidos con los más altos estándares de calidad y seguridad.",
       link: "#",
-      imageUrl: "Almacen/tiposAlmacen/almacenAduanero.jpg",
+      imageUrl: "Almacen/tiposAlmacen/almacenajeHero.jpg",
     },
   ]
   

@@ -16,7 +16,7 @@ export default function AboutPage() {
         <Header />
         <Hero 
           titleKey="heroAboutUs" 
-          imageUrl="/imageHero.webp" 
+          imageUrl="/Nosotros/NosotrosHero.jpg" 
           altText="Imagen Hero Nosotros" 
         />
         <AboutSection />

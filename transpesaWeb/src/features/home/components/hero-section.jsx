@@ -1,66 +1,94 @@
 import { ArrowRight, Phone, ChevronDown } from "lucide-react"
-import { useTranslation } from 'react-i18next'; // 1. Importa el hook
+import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 
 export default function HeroSection() {
-  const { t } = useTranslation(); // 2. Usa el hook para obtener la función 't'
+  const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img
-          src="camion1.webp"
-          alt={t('homeHeroAltText')} // 3. Usa t() para traducir
-          className="w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent md:bg-gradient-to-l md:from-black/70"></div>
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
+      
+      {/* 1. EL VIDEO DE FONDO */}
+      <div className="absolute inset-0 w-full h-full">
+         <video
+            autoPlay loop muted playsInline
+            poster="camion1.webp"
+            className="w-full h-full object-cover"
+          >
+            <source src="/Inicio/VideoHero.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-black/20"></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 pt-24 pb-12 md:pt-20">
-        <div className="flex justify-center md:justify-end">
-          <div className="max-w-2xl text-center md:text-left">
-            <div className="hidden md:flex items-center gap-3 mb-6">
-              <div className="w-12 h-1 bg-red-500"></div>
-              <span className="text-red-300 font-semibold tracking-wider uppercase text-sm">
+      {/* 2. EL BLOQUE ROJIZO */}
+      <div className="relative z-10 w-full md:w-[65%] min-h-screen flex flex-col justify-center">
+        
+        {/* Fondo rojo (Sin cambios) */}
+        <div className="absolute inset-0">
+            <div className="absolute inset-y-0 left-0 md:-left-48 w-full md:w-[150%] bg-gradient-to-r from-[#7f1d1d] via-[#991b1b]/95 to-transparent md:-skew-x-12 md:origin-bottom-left shadow-2xl backdrop-blur-[2px]"></div>
+            <div className="hidden md:block absolute inset-y-0 right-[-10%] md:right-auto md:left-[90%] w-[1px] bg-red-500/30 md:-skew-x-12 origin-bottom-left"></div>
+        </div>
+
+        {/* 3. CONTENIDO (Ajuste de Tamaños) */}
+        <div className="relative px-6 md:pl-24 md:pr-32 pt-32 pb-12 flex flex-col justify-center h-full">
+            
+            {/* Subtítulo */}
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-[2px] bg-white"></div> {/* Línea más sutil */}
+              <span className="text-white font-bold tracking-[0.15em] uppercase text-sm drop-shadow-md">
                 {t('homeHeroSubheading')}
               </span>
             </div>
-            <h1 className="text-4xl sm:text-4xl lg:text-4xl font-bold leading-tight mb-6 text-white drop-shadow-lg">
+
+            {/* TÍTULO: AJUSTADO PARA QUE "QUEPA TODO" */}
+            {/* Antes era text-[5.5rem] (muy grande). Ahora es text-6xl (60px), perfecto para escritorio. */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-white drop-shadow-lg tracking-tight max-w-4xl">
               {t('homeHeroTitle')}
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0">
+
+            {/* DESCRIPCIÓN */}
+            <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed max-w-lg font-medium drop-shadow">
               {t('homeHeroDescription')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center md:justify-start">
-              <Link to="/about" className="flex items-center justify-center gap-3 px-8 py-4 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl">
-                <ArrowRight className="w-5 h-5" />
+
+            {/* BOTONES */}
+            <div className="flex flex-wrap gap-4 mb-12">
+              <Link to="/about" className="group flex items-center gap-2 px-8 py-3 bg-white text-[#991b1b] rounded-md hover:bg-gray-100 transition-all font-bold shadow-lg hover:-translate-y-1">
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 {t('homeHeroButtonKnowMore')}
               </Link>
-              <Link to="/contacto" className="flex items-center justify-center gap-3 px-8 py-4 border-2 border-white text-white rounded-lg hover:bg-white hover:text-gray-900 transition-all duration-300 font-semibold">
+              <Link to="/contacto" className="flex items-center gap-2 px-8 py-3 border border-white/50 text-white rounded-md hover:bg-white/10 transition-all font-bold">
                 <Phone className="w-5 h-5" />
                 {t('homeHeroButtonContactUs')}
               </Link>
             </div>
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 bg-black/30 backdrop-blur-sm rounded-xl p-4 sm:p-6">
-              <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">50+</div>
-                <div className="text-gray-300 text-xs sm:text-sm">{t('homeHeroStatExperience')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">1000+</div>
-                <div className="text-gray-300 text-xs sm:text-sm">{t('homeHeroStatClients')}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-white mb-1 sm:mb-2">24/7</div>
-                <div className="text-gray-300 text-xs sm:text-sm">{t('homeHeroStatService')}</div>
+
+            {/* ESTADÍSTICAS */}
+            <div className="border-t border-white/20 pt-6 w-full max-w-xl">
+              <div className="flex gap-12">
+                <div>
+                  <div className="text-3xl md:text-4xl font-black text-white">50+</div>
+                  <div className="text-white/80 text-[10px] md:text-xs font-bold uppercase tracking-widest mt-1">{t('homeHeroStatExperience')}</div>
+                </div>
+                <div>
+                  <div className="text-3xl md:text-4xl font-black text-white">1000+</div>
+                  <div className="text-white/80 text-[10px] md:text-xs font-bold uppercase tracking-widest mt-1">{t('homeHeroStatClients')}</div>
+                </div>
+                <div>
+                  <div className="text-3xl md:text-4xl font-black text-white">24/7</div>
+                  <div className="text-white/80 text-[10px] md:text-xs font-bold uppercase tracking-widest mt-1">{t('homeHeroStatService')}</div>
+                </div>
               </div>
             </div>
-          </div>
+
         </div>
       </div>
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+      
+      {/* Flecha Scroll */}
+       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
         <ChevronDown className="w-6 h-6" />
       </div>
+
     </section>
   )
 }

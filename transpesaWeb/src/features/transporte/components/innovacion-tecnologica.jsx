@@ -15,7 +15,7 @@ const technologies = [
     title: "Cámara de video",
     description:
       "Registra actos inseguros del conductor y de otros conductores presentes en la vía, también ayuda en la investigación de accidentes.",
-    imageUrl: "Transporte/innovacionTec/camaraVideo.jpg",
+    imageUrl: "Transporte/innovacionTec/camara.jpg",
     icon: Camera,
   },
   {
@@ -23,7 +23,7 @@ const technologies = [
     title: "Copiloto Virtual",
     description:
       "Asistente inteligente que monitorea constantemente las condiciones de manejo y proporciona alertas en tiempo real.",
-    imageUrl: "Transporte/innovacionTec/copilotoVirtual.webp",
+    imageUrl: "Transporte/innovacionTec/asistente.jpg",
     icon: Brain,
   },
 ]
