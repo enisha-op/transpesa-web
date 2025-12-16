@@ -4,19 +4,19 @@ import { motion } from 'framer-motion';
 const cardData = [
   {
     title: 'MISIÓN',
-    imageSrc: '/Nosotros/mision.jpg',
+    imageSrc: '/Nosotros/mision.webp',
     icon: <Target className="h-8 w-8 text-white" />,
     content: 'Brindar soluciones logísticas integrales y especializadas que conecten negocios y personas, impulsando el crecimiento de nuestros clientes y la rentabilidad de nuestros socios, con innovación, seguridad y responsabilidad social.',
   },
   {
     title: 'VISIÓN',
-    imageSrc: '/Nosotros/vision.jpg',
+    imageSrc: '/Nosotros/vision.webp',
     icon: <Goal className="h-8 w-8 text-white" />,
     content: 'Para el 2030, ser reconocidos como un operador logístico de clase mundial, líder en soluciones integrales y sostenibles, que trascienda fronteras y revolucione la experiencia logística mediante la innovación y tecnología.',
   },
   {
     title: 'VALORES',
-    imageSrc: '/Nosotros/valores.jpg',
+    imageSrc: '/Nosotros/valores.webp',
     icon: <Gem className="h-8 w-8 text-white" />,
     content: ['Innovación', 'Integridad', 'Seguridad', 'Responsabilidad', 'Excelencia', 'Trabajo en Equipo'],
   },

@@ -10,7 +10,7 @@ export default function TiposAlmacenesSection() {
       description:
         "Unidades exclusivas para operaciones personalizadas, diseñadas para responder a las necesidades específicas de cada cliente.",
       link: "#",
-      imageUrl: "Almacen/almacen02.png",
+      imageUrl: "Almacen/almacen02.webp",
     },
     {
       id: 2,

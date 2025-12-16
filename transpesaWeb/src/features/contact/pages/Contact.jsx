@@ -11,7 +11,7 @@ export default function ContactPage() {
         <Header />
         <Hero 
           titleKey="heroContact" 
-          imageUrl="/contacto.jpg" 
+          imageUrl="/contacto.webp" 
           altText="Imagen Hero Contacto" 
         />
         <ContactSection />  

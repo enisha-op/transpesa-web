@@ -11,13 +11,13 @@ export default function VisionSection() {
         <div className="bg-white px-4 pt-20 pb-12">
           <div className="relative w-full max-w-sm mx-auto h-[400px]">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl z-10">
-              <img src="/Inicio/Inicio02.jpg" alt={t('visionAltAirplane')} className="w-full h-full object-cover" loading="lazy" />
+              <img src="/Inicio/Inicio02.webp" alt={t('visionAltAirplane')} className="w-full h-full object-cover" loading="lazy" />
             </div>
             <div className="absolute bottom-8 left-0 w-44 h-44 rounded-full overflow-hidden border-4 border-white shadow-xl z-0">
-              <img src="/Inicio/Inicio03.jpg" alt={t('visionAltTruck')} className="w-full h-full object-cover" loading="lazy" />
+              <img src="/Inicio/Inicio03.webp" alt={t('visionAltTruck')} className="w-full h-full object-cover" loading="lazy" />
             </div>
             <div className="absolute bottom-8 right-0 w-44 h-44 rounded-full overflow-hidden border-4 border-white shadow-xl z-0">
-              <img src="/Inicio/Inicio04.jpg" alt={t('visionAltWorker')} className="w-full h-full object-cover" loading="lazy" />
+              <img src="/Inicio/Inicio04.webp" alt={t('visionAltWorker')} className="w-full h-full object-cover" loading="lazy" />
             </div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-red-600 rounded-full flex items-center justify-center border-4 border-white shadow-xl z-20">
               <img src="/logo-transpesa-blanco.png" alt={t('visionAltLogo')} className="w-3/5 h-3/5 object-contain"  loading="lazy"/>

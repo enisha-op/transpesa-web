@@ -18,7 +18,7 @@ export default function TransportePage() {
       <Header />
       <Hero 
         titleKey="heroTransport" 
-        imageUrl="/Inicio/Transporte.jpg" 
+        imageUrl="/Inicio/Transporte.webp" 
         altText="Imagen Hero Transporte" 
       />
 

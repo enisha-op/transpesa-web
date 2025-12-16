@@ -15,6 +15,7 @@ export default function HeroSection() {
             poster="camion1.webp"
             className="w-full h-full object-cover"
           >
+            <source src="/Inicio/VideoHero.webm" type="video/webm" />
             <source src="/Inicio/VideoHero.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-black/20"></div>

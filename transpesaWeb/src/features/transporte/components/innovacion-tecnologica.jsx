@@ -7,7 +7,7 @@ const technologies = [
     title: "Sensor de Fatiga",
     description:
       "Sistema avanzado de detección de fatiga del conductor mediante reconocimiento facial y análisis de patrones de comportamiento.",
-    imageUrl: "Transporte/innovacionTec/sensorFatiga.jpg",
+    imageUrl: "Transporte/innovacionTec/sensorFatiga.webp",
     icon: Eye,
   },
   {
@@ -15,7 +15,7 @@ const technologies = [
     title: "Cámara de video",
     description:
       "Registra actos inseguros del conductor y de otros conductores presentes en la vía, también ayuda en la investigación de accidentes.",
-    imageUrl: "Transporte/innovacionTec/camara.jpg",
+    imageUrl: "Transporte/innovacionTec/camara.webp",
     icon: Camera,
   },
   {
@@ -23,7 +23,7 @@ const technologies = [
     title: "Copiloto Virtual",
     description:
       "Asistente inteligente que monitorea constantemente las condiciones de manejo y proporciona alertas en tiempo real.",
-    imageUrl: "Transporte/innovacionTec/asistente.jpg",
+    imageUrl: "Transporte/innovacionTec/asistente.webp",
     icon: Brain,
   },
 ]

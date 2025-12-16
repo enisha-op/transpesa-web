@@ -10,7 +10,7 @@ export default function TiposCargaSection() {
       description:
         "Transporte especializado con unidades acondicionadas para el traslado seguro y eficiente de concentrados minerales, cumpliendo con altos estándares de seguridad y normativas ambientales.",
       link: "#",
-      imageUrl: "/Transporte/tiposCarga/concentradoMineral.jpg",
+      imageUrl: "/Transporte/tiposCarga/concentradoMineral.webp",
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export default function TiposCargaSection() {
       description:
         "Unidades exclusivas para operaciones personalizadas, diseñadas para responder a las necesidades específicas de cada cliente.",
       link: "#",
-      imageUrl: "/Transporte/tiposCarga/flota-camiones.jpg",
+      imageUrl: "/Transporte/tiposCarga/flota-camiones.webp",
     },
 
     {
@@ -27,7 +27,7 @@ export default function TiposCargaSection() {
       description:
         "Soluciones confiables para el transporte de combustibles líquidos, garantizando seguridad, control y cumplimiento de las regulaciones vigentes en cada operación.",
       link: "#",
-      imageUrl: "/Transporte/tiposCarga/combustibleLiquido.jpg",
+      imageUrl: "/Transporte/tiposCarga/combustibleLiquido.webp",
     },
   ]
   
