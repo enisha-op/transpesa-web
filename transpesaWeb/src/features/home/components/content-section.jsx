@@ -39,7 +39,7 @@ export default function ContentSection() {
           <div className="flex justify-center">
             <div className="bg-gradient-to-br from-gray-200 to-gray-300 rounded-full aspect-square flex items-center justify-center overflow-hidden w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
               <img
-                src="/Inicio/Inicio05.jpg"
+                src="/Inicio/Inicio05.webp"
                 alt={t('homeContentImageAlt')}
                 className="w-full h-full object-cover"
                 loading="lazy"

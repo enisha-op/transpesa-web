@@ -11,7 +11,7 @@ export default function TiposCargaSection() {
       description:
         "Combina experiencia y tecnología para optimizar la gestión logística de tu empresa.",
       link: "/almacenaje",
-      imageUrl: "/Inicio/Almacen.png",
+      imageUrl: "/Inicio/Almacen.webp",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ export default function TiposCargaSection() {
       description:
         "Impulsamos el crecimiento logístico con una flota moderna, procesos eficientes y un compromiso constante con la excelencia.",
       link: "/transporte",
-      imageUrl: "/Inicio/Transporte.jpg",
+      imageUrl: "/Inicio/Transporte.webp",
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ export default function TiposCargaSection() {
         "Gestión aduanera ágil y confiable para tus operaciones de importación y exportación.",
       link: "https://amt.pe/",
       external: true,
-      imageUrl: "/almacenajeHero.jpg",
+      imageUrl: "/almacenajeHero.webp",
     },
   ]
   

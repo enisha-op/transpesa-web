@@ -18,7 +18,7 @@ export default function AlmacenPage() {
         <Header />
         <Hero 
           titleKey="heroStorage" 
-          imageUrl="/Inicio/Almacen.png" 
+          imageUrl="/Inicio/Almacen.webp" 
           altText="Imagen Hero Almacén" 
         />
         <SecondaryNavAlmacen />

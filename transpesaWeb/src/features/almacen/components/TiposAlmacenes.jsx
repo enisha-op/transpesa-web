@@ -18,7 +18,7 @@ export default function TiposAlmacenesSection() {
       description:
         "Transporte seguro y especializado de concentrados de mineral, cumpliendo con las más estrictas normativas del sector.",
       link: "#",
-      imageUrl: "Almacen/Almacen.png",
+      imageUrl: "Almacen/Almacen.webp",
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ export default function TiposAlmacenesSection() {
       description:
         "Distribución segura y eficiente de combustibles líquidos con los más altos estándares de calidad y seguridad.",
       link: "#",
-      imageUrl: "Almacen/tiposAlmacen/almacenajeHero.jpg",
+      imageUrl: "Almacen/tiposAlmacen/almacenajeHero.webp",
     },
   ]
   

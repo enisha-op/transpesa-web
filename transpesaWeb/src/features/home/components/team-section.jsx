@@ -5,11 +5,11 @@ export default function TeamSection() {
   const { t } = useTranslation();
 
   const teamMembers = [
-    { id: 1, nameKey: "teamMember1Name", positionKey: "teamMember1Position", image: "/Inicio/team01.jpg" },
-    { id: 2, nameKey: "teamMember2Name", positionKey: "teamMember2Position", image: "/Inicio/team05.jpg" },
-    { id: 3, nameKey: "teamMember3Name", positionKey: "teamMember3Position", image: "/Inicio/team03.jpg" },
-    { id: 4, nameKey: "teamMember4Name", positionKey: "teamMember4Position", image: "/Inicio/team02.jpg" },
-    { id: 5, nameKey: "teamMember5Name", positionKey: "teamMember5Position", image: "/Inicio/team04.jpg" },
+    { id: 1, nameKey: "teamMember1Name", positionKey: "teamMember1Position", image: "/Inicio/team01.webp" },
+    { id: 2, nameKey: "teamMember2Name", positionKey: "teamMember2Position", image: "/Inicio/team05.webp" },
+    { id: 3, nameKey: "teamMember3Name", positionKey: "teamMember3Position", image: "/Inicio/team03.webp" },
+    { id: 4, nameKey: "teamMember4Name", positionKey: "teamMember4Position", image: "/Inicio/team02.webp" },
+    { id: 5, nameKey: "teamMember5Name", positionKey: "teamMember5Position", image: "/Inicio/team04.webp" },
   ];
 
   const containerVariants = {
