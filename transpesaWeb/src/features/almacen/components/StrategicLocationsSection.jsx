@@ -6,25 +6,25 @@ const locations = [
     id: 1,
     name: "Salaverry",
     ciudad: "Trujillo",
-    tipo: "Almacén Principal",
+    //tipo: "Almacén Principal",
     color: "bg-red-500",
-    description: "Centro de distribución norte",
+    //description: "Centro de distribución norte",
   },
   {
     id: 2,
     name: "La Encalada",
     ciudad: "Trujillo",
-    tipo: "Almacén Secundario",
+    //tipo: "Almacén Secundario",
     color: "bg-red-600",
-    description: "Soporte logístico regional",
+    //description: "Soporte logístico regional",
   },
   {
     id: 3,
     name: "Lima",
     ciudad: "Callao",
-    tipo: "Hub Central",
+    //tipo: "Hub Central",
     color: "bg-red-700",
-    description: "Centro de operaciones principal",
+    //description: "Centro de operaciones principal",
   },
 ]
 
@@ -180,7 +180,7 @@ export default function StrategicLocationsMinimal() {
 
                     <p className="text-gray-500 text-sm mb-3">{location.description}</p>
 
-                    <div className="flex items-center justify-between">
+                    {/* <div className="flex items-center justify-between">
                       <span className="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold bg-red-100 text-red-700 border border-red-200">
                         {location.tipo}
                       </span>
@@ -189,9 +189,9 @@ export default function StrategicLocationsMinimal() {
                         className="text-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                         whileHover={{ x: 5 }}
                       >
-                        {/* <span className="text-sm font-medium">Ver detalles →</span> */}
+                         <span className="text-sm font-medium">Ver detalles →</span> 
                       </motion.div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </motion.div>

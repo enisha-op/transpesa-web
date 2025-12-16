@@ -43,7 +43,7 @@ export default function BranchesSection() {
     },
     {
       name: 'Lima',
-      addressKey: 'branchAddress1', // Clave de traducción
+      addressKey: 'branchAddress2', // Clave de traducción
       phone: '+51 (044) 233498',
       email: 'asistentecomercial@transpesa.com.pe',
       coordinates: [-12.04318, -77.02824],

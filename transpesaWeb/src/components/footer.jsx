@@ -128,7 +128,10 @@ export default function Footer() {
                 Trujillo
               </h5>
               <p className="text-sm sm:text-base md:text-sm lg:text-base text-white xl:text-gray-700 leading-relaxed">
-                Parcela Rustica 4808 Urb. Ex Fundo La Rea <br /> TRUJILLO - LA LIBERTAD
+                Parcela Fustica UC 4808 Fundo Larrea  <br /> TRUJILLO - MOCHE
+              </p>
+              <p className="text-sm sm:text-base md:text-sm lg:text-base text-white xl:text-gray-700 leading-relaxed">
+                AU. Salaverry KM. 4.5 PTO. Salaverry  <br />  TRUJILLO - SALAVERRY
               </p>
               <p className="text-sm sm:text-base md:text-sm lg:text-base text-gray-100 xl:text-gray-600 font-medium">
                 +51 (044) 233498 | +51 (044) 233495
@@ -139,7 +142,10 @@ export default function Footer() {
                 Lima
               </h5>
               <p className="text-sm sm:text-base md:text-sm lg:text-base text-white xl:text-gray-700 leading-relaxed">
-                Calle 2 Esquina Av. Elmer Faucett <br /> Urb. Fundo Bocanegra Alto - Callao
+                AV Oquendo Seccion 3B Prov. Const. Del Callao <br /> PROV. CONST. DEL CALLAO - CALLAO
+              </p>
+              <p className="text-sm sm:text-base md:text-sm lg:text-base text-white xl:text-gray-700 leading-relaxed">
+                Lote D Seccion B Hacienda Chillon Lima <br /> LIMA - PUENTE PIEDRA
               </p>
               <p className="text-sm sm:text-base md:text-sm lg:text-base text-gray-100 xl:text-gray-600 font-medium">
                 +51 (044) 233498 | +51 (044) 233495

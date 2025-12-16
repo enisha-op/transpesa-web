@@ -5,10 +5,10 @@ export default function QualitySection() {
 
   const certifications = [
     // ... tu array no cambia
-    { src: "/images/sgs-certification.png", altKey: "qualityAltSGS1" },
+    { src: "/images/14001.png", altKey: "qualityAltSGS1" },
     { src: "/images/sgs-certification.png", altKey: "qualityAltSGS2" },
-    { src: "/images/sgs-certification.png", altKey: "qualityAltSGS3" },
-    { src: "/images/sgs-certification.png", altKey: "qualityAltSGS4" },
+    { src: "/images/39001.png", altKey: "qualityAltSGS3" },
+    { src: "/images/45001.png", altKey: "qualityAltSGS4" },
   ];
 
   return (

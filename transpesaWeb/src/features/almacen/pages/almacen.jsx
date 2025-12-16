@@ -31,9 +31,9 @@ export default function AlmacenPage() {
           <FeaturesSection />
         </section>
 
-        <section id="calidad-almacen">
+        {/* <section id="calidad-almacen">
           <QualitySection />
-        </section>
+        </section> */}
 
         <section id="tipos-almacenes">
           <TiposAlmacenesSection />

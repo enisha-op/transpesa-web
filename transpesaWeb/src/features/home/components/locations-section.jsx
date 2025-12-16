@@ -9,6 +9,7 @@ export default function LocationsSection() {
       id: 1,
       city: "TRUJILLO",
       addressKey: "locationsAddressTrujillo", // Clave de traducción
+      addressKey2: "locationsAddressTrujillo2",
       phone1: "+51 (044) 233498",
       phone2: "+51 (044) 233498",
     },
@@ -16,6 +17,7 @@ export default function LocationsSection() {
       id: 2,
       city: "LIMA",
       addressKey: "locationsAddressLima", // Clave de traducción
+      addressKey2: "locationsAddressLima2",
       phone1: "+51 (01) 5740525",
       phone2: "+51 (01) 5740526",
     },
@@ -40,6 +42,7 @@ export default function LocationsSection() {
               <div className="p-6 flex-grow">
                 {/* 5. Traduce la dirección */}
                 <p className="text-gray-800 text-sm leading-relaxed mb-4">{t(location.addressKey)}</p>
+                <p className="text-gray-800 text-sm leading-relaxed mb-4">{t(location.addressKey2)}</p>
 
                 <div className="space-y-1">
                   <div className="text-red-600 font-semibold text-sm">{location.phone1}</div>

@@ -24,10 +24,10 @@ export default function HeroSection() {
       <div className="relative z-10 w-full md:w-[65%] min-h-screen flex flex-col justify-center">
         
         {/* Fondo rojo (Sin cambios) */}
-        <div className="absolute inset-0">
+        {/* <div className="absolute inset-0">
             <div className="absolute inset-y-0 left-0 md:-left-48 w-full md:w-[150%] bg-gradient-to-r from-[#7f1d1d] via-[#991b1b]/95 to-transparent md:-skew-x-12 md:origin-bottom-left shadow-2xl backdrop-blur-[2px]"></div>
             <div className="hidden md:block absolute inset-y-0 right-[-10%] md:right-auto md:left-[90%] w-[1px] bg-red-500/30 md:-skew-x-12 origin-bottom-left"></div>
-        </div>
+        </div> */}
 
         {/* 3. CONTENIDO (Ajuste de Tamaños) */}
         <div className="relative px-6 md:pl-24 md:pr-32 pt-32 pb-12 flex flex-col justify-center h-full">

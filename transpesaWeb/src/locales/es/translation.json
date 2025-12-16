@@ -119,8 +119,10 @@
 
   "locationsMainTitle": "Ubícanos",
   "locationsMainSubtitle": "Presencia estratégica para estar más cerca de ti.",
-  "locationsAddressTrujillo": "Parcela Rustica 4808 Urb. Ex Fundo La Rea TRUJILLO - LA LIBERTAD",
-  "locationsAddressLima": "Calle 2 Esquina Av. Elmer Faucett, Urb. Fundo Bocanegra Alto- Callao",
+  "locationsAddressTrujillo": "Parcela Fustica UC 4808 Fundo Larrea  TRUJILLO - MOCHE",
+  "locationsAddressTrujillo2": "AU. Salaverry KM. 4.5 PTO. Salaverry  TRUJILLO - SALAVERRY",
+  "locationsAddressLima": "AV Oquendo Seccion 3B Prov. Const. Del Callao PROV. CONST. DEL CALLAO - CALLAO",
+  "locationsAddressLima2": "Lote D Seccion B Hacienda Chillon Lima  LIMA - PUENTE PIEDRA",
 
 
 
@@ -137,7 +139,9 @@
   "_comentario12": "TRADUCCIONES AL ESPAÑOL DE LA SECCIÓN DE SUCURSALES ------- PÁGINA CONTÁCTANOS",
 
   "branchesMainTitle": "Nuestras <0>Sucursales</0>",
-  "branchAddress1": "Calle 2 Esquina Av. Elmer Faucett, Urb. Fundo Bocanegra Alto- Callao",
+  "branchAddress1": "Parcela Fustica UC 4808 Fundo Larrea",
+  "branchAddress2": "AV Oquendo Seccion 3B Prov. Const. Del Callao",
+  
 
 
 
