@@ -56,7 +56,7 @@ function App() {
     // Creamos una promesa que se resolverá después de un tiempo mínimo (ej. 2 segundos).
     // Esto asegura que la animación de tu LoadingScreen tenga tiempo de ejecutarse.
     const minTimePromise = new Promise(resolve => {
-      setTimeout(resolve, 2000); // 2000ms = 2 segundos
+      setTimeout(resolve, 5500); // 5000ms = 5 segundos
     });
 
     // Promise.all espera a que AMBAS promesas se completen.

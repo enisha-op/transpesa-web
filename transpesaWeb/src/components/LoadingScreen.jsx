@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useEffect } from "react"
 
 export default function LoadingScreen({ onLoadingComplete }) {
@@ -10,7 +12,7 @@ export default function LoadingScreen({ onLoadingComplete }) {
           clearInterval(interval)
           return 100
         }
-        return prev + 2
+        return prev + 1
       })
     }, 50)
 
@@ -23,7 +25,7 @@ export default function LoadingScreen({ onLoadingComplete }) {
         if (onLoadingComplete) {
           onLoadingComplete()
         }
-      }, 500)
+      }, 1000)
     }
   }, [progress, onLoadingComplete])
 
@@ -45,7 +47,6 @@ export default function LoadingScreen({ onLoadingComplete }) {
             <img src="/logo-transpesa-blanco.png" alt="Grupo Transpesa" className="w-full h-full object-contain" />
           </div>
         </div>
-
         {/* Barra de progreso y porcentaje */}
         <div className="flex flex-col items-center gap-4 w-96 max-w-[80vw]">
           <div className="w-full h-2 bg-white/20 rounded-full overflow-hidden">
