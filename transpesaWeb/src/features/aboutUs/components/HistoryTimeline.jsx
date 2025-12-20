@@ -1,28 +1,46 @@
 // --- Datos de la línea de tiempo (sin cambios) ---
 const timelineData = [
   {
-    year: '1955',
-    title: 'Fundación de Transpesa',
-    description: 'Nace como un operador logístico con la misión de innovar en el transporte y ser un referente en soluciones integrales y sostenibles.',
+    year: '1971',
+    title: 'El Origen',
+    description: 'Inicio de operaciones con la conducción de un solo camión, liderada por el señor enrique pesantes cueva, bajo la razón social Transportes Pesantes Novoa Hermanos, marcando el nacimiento de una empresa basada en el esfuerzo, la responsabilidad y el trabajo constante.',
     image: '/Nosotros/1955.webp',
   },
   {
-    year: '1980',
-    title: 'Expansión Nacional',
-    description: 'Se consolida la presencia en las principales regiones del país, construyendo una red de operaciones robusta y confiable.',
-    image: '/Nosotros/1980.webp',
+    year: '1998',
+    title: 'Visión de Crecimiento',
+    description: 'Importación de 20 camiones desde Suecia, consolidando un salto importante en la modernización de la flota y reafirmando una visión empresarial orientada al crecimiento sostenido.',
+    image: '/Nosotros/A2.webp',
   },
   {
-    year: '1990',
-    title: 'Innovación Tecnológica',
-    description: 'Pioneros en la adopción de tecnología para la gestión de flotas y almacenes, mejorando la eficiencia y seguridad en cada servicio.',
+    year: '2000',
+    title: 'Nacimiento de Transpesa',
+    description: 'Cambio de razón social y consolidación de la empresa bajo el nombre transpesa, dando inicio a una nueva etapa de profesionalización, expansión y fortalecimiento institucional.',
+    image: '/Nosotros/A6.webp',
+  },
+  {
+    year: '2008',
+    title: 'Diversificación Logística',
+    description: 'Inicio del negocio de almacenes Altra, ampliando la oferta de servicios hacia soluciones integrales de almacenaje y logística especializada.',
+    image: '/Nosotros/Imagen1.webp',
+  },
+  {
+    year: '2015',
+    title: 'Expansión Nacional',
+    description: 'Consolidación de operaciones a nivel nacional, con presencia estratégica en Lima, Trujillo y Piura, fortaleciendo la cobertura operativa y la capacidad de atención a clientes de distintos sectores.',
+    image: '/Nosotros/2010.webp',
+  },
+  {
+    year: '2017',
+    title: 'Tecnología y Control',
+    description: 'Implementación integral de gps, telemetría y torre de control 24/7, elevando los estándares de seguridad, trazabilidad, control operativo y toma de decisiones en tiempo real.',
     image: '/Nosotros/1990.webp',
   },
   {
-    year: '2010',
-    title: 'Liderazgo en Sostenibilidad',
-    description: 'Implementamos políticas de responsabilidad social y ambiental, comprometidos con generar un impacto positivo en la sociedad.',
-    image: '/Nosotros/2010.webp',
+    year: '2025',
+    title: 'Modernización de Flota',
+    description: 'Incorporación de más de 100 unidades nuevas, incluyendo flota de última generación a gnl – euro 6, reafirmando el compromiso del grupo con la eficiencia operativa, la sostenibilidad y la innovación tecnológica.',
+    image: '/Nosotros/1980.webp',
   },
 ];
 
